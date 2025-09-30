@@ -23,4 +23,16 @@ public class ClustersController : ControllerBase
         var result = new CollectionResult<ClusterDto>(result: new List<ClusterDto>(), totalCount: 0);
         return Ok(result);
     }
+
+    /// <summary>
+    /// Создание куста.
+    /// </summary>
+    [HttpPost]
+    [ProducesResponseType(StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public ActionResult<Guid> CreateCluster([FromBody] ClusterCreateDto dto)
+    {
+        Guid guid = Guid.NewGuid();
+        return StatusCode(StatusCodes.Status201Created, new { Id = guid });
+    }
 }
