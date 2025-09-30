@@ -9,7 +9,7 @@ namespace Gir.Vns.Controllers;
 /// </summary>
 [ApiController]
 [Route("api/v1/gir")]
-public class AssetContentController : ControllerBase
+public class AssetContentsController : ControllerBase
 {
     /// <summary>
     /// Получение списка содержимого активов с фильтрацией и сортировкой.
