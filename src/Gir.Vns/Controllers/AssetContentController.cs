@@ -1,0 +1,27 @@
+﻿using Gir.Vns.Dtos;
+using Gir.Vns.Dtos.AssetContent;
+using Microsoft.AspNetCore.Mvc;
+
+namespace Gir.Vns.Controllers;
+
+/// <summary>
+/// Содержимое активов.
+/// </summary>
+[ApiController]
+[Route("api/v1/gir")]
+public class AssetContentController : ControllerBase
+{
+    /// <summary>
+    /// Получение списка содержимого активов с фильтрацией и сортировкой.
+    /// </summary>
+    /// <param name="query"></param>
+    /// <returns></returns>
+    [HttpGet("asset-contents")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public ActionResult<CollectionResult<AssetContentDto>> GetAssetContents([FromQuery] GetAssetContentsQuery query)
+    {
+        var result = new CollectionResult<AssetContentDto>(result: new List<AssetContentDto>(), totalCount: 0);
+        return Ok(result);
+    }
+}
