@@ -19,7 +19,7 @@ public class CommentsController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<CommentDto?> GetCommentById(Guid id, CancellationToken cancellationToken)
+    public ActionResult<CommentDto?> GetCommentById(Guid id)
     {
         return Ok(new CommentDto());
     }

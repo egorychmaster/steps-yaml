@@ -1,10 +1,10 @@
-﻿using Gir.Vns.Dtos.Clusters.Enums;
+﻿using Gir.Vns.Dtos.Layers.Enums;
 using Step.Lib.Common.Dtos.Filter.Sorting;
 using System.Linq.Expressions;
 
-namespace Gir.Vns.Dtos.Clusters;
+namespace Gir.Vns.Dtos.Layers;
 
-public class GetClustersQuery: BaseSortFilter<ClusterDto, ClusterSortPropertyName>
+public class GetLayersQuery : BaseSortFilter<LayerDto, LayerSortPropertyName>
 {
     /// <summary>
     /// Идентификаторы.
@@ -22,24 +22,19 @@ public class GetClustersQuery: BaseSortFilter<ClusterDto, ClusterSortPropertyNam
     public string? NameContains { get; init; }
 
     /// <summary>
+    /// Наименования.
+    /// </summary>
+    public string[]? Names { get; init; }
+
+    /// <summary>
     /// Идентификаторы месторождения.
     /// </summary>
     public Guid[]? FieldIds { get; init; }
 
     /// <summary>
-    /// Номер.
+    /// Наименование месторождения.
     /// </summary>
-    public string? Number {  get; init; }
-
-    /// <summary>
-    /// Часть номера.
-    /// </summary>
-    public string? NumberContains { get; init; }
-
-    /// <summary>
-    /// Номера.
-    /// </summary>
-    public string[]? Numbers { get; init; }
+    public string? FieldName { get; init; }
 
     /// <summary>
     /// **Ключи сортировки:**
@@ -58,9 +53,9 @@ public class GetClustersQuery: BaseSortFilter<ClusterDto, ClusterSortPropertyNam
     /// <summary>
     /// Поддерживаемые сортировки.
     /// </summary>
-    protected override Dictionary<ClusterSortPropertyName, Expression<Func<ClusterDto, object>>> SupportedSortings =>
+    protected override Dictionary<LayerSortPropertyName, Expression<Func<LayerDto, object>>> SupportedSortings =>
         new()
         {
-            [ClusterSortPropertyName.DateCreated] = x => x.DateCreated
+            [LayerSortPropertyName.DateCreated] = x => x.DateCreated
         };
 }
