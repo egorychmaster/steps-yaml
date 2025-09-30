@@ -1,5 +1,5 @@
 ﻿using Gir.Vns.Dtos;
-using Microsoft.AspNetCore.Http;
+using Gir.Vns.Dtos.Clusters;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Gir.Vns.Controllers;
@@ -15,12 +15,12 @@ public class ClustersController : ControllerBase
     /// Получение списка типов кластеров с фильтрацией и сортировкой.
     /// </summary>
     /// <returns></returns>
-    //[HttpGet]
-    //[ProducesResponseType(StatusCodes.Status200OK)]
-    //[ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    //public ActionResult<CollectionResult<ClusterDto>> GetModuleTypesAsync([FromQuery] GetClustersQuery query)
-    //{
-    //    var result = await getClustersHandler.HandleAsync(query);
-    //    return Ok(result);
-    //}
+    [HttpGet]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public ActionResult<CollectionResult<ClusterDto>> GetModuleTypesAsync([FromQuery] GetClustersQuery query)
+    {
+        var result = new CollectionResult<ClusterDto>(result: new List<ClusterDto>(), totalCount: 0);
+        return Ok(result);
+    }
 }
