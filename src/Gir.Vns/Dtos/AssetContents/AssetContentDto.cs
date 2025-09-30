@@ -1,9 +1,11 @@
-﻿namespace Gir.Vns.Dtos.Cluster;
+﻿using Gir.Vns.Dtos.Clusters;
+
+namespace Gir.Vns.Dtos.AssetContents;
 
 /// <summary>
 /// Состав актива.
 /// </summary>
-public class AssetContentLightDto
+public class AssetContentDto
 {
     /// <summary>
     /// Идентификатор.
@@ -34,4 +36,29 @@ public class AssetContentLightDto
     /// Идентификатор лицензионного участка (ЛУ).
     /// </summary>
     public Guid LicenseAreaId { get; set; }
+
+    /// <summary>
+    /// Актив.
+    /// </summary>
+    public AssetDto Asset { get; set; } = null!;
+
+    /// <summary>
+    /// Месторождение.
+    /// </summary>
+    public FieldDto Field { get; set; } = null!;
+
+    /// <summary>
+    /// Лицензионный участок (ЛУ).
+    /// </summary>
+    public LicenseAreaDto LicenseArea { get; set; } = null!;
+
+    /// <summary>
+    /// Дата создания.
+    /// </summary>
+    public DateTime DateCreated { get; set; }
+
+    /// <summary>
+    /// Кем создано.
+    /// </summary>
+    public Guid? CreatedByUserId { get; set; }
 }

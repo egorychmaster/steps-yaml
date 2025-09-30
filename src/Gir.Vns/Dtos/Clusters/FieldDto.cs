@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.Cluster;
+﻿namespace Gir.Vns.Dtos.Clusters;
 
 /// <summary>
 /// Месторождение.

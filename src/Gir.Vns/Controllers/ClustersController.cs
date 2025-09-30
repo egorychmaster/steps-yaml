@@ -1,10 +1,26 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Gir.Vns.Dtos;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Gir.Vns.Controllers;
 
-[Route("api/[controller]")]
+/// <summary>
+/// Кластеры.
+/// </summary>
 [ApiController]
+[Route("api/v1/gir/clusters")]
 public class ClustersController : ControllerBase
 {
+    /// <summary>
+    /// Получение списка типов кластеров с фильтрацией и сортировкой.
+    /// </summary>
+    /// <returns></returns>
+    //[HttpGet]
+    //[ProducesResponseType(StatusCodes.Status200OK)]
+    //[ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    //public ActionResult<CollectionResult<ClusterDto>> GetModuleTypesAsync([FromQuery] GetClustersQuery query)
+    //{
+    //    var result = await getClustersHandler.HandleAsync(query);
+    //    return Ok(result);
+    //}
 }

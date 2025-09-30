@@ -1,9 +1,9 @@
-﻿namespace Gir.Vns.Dtos.AssetContent;
+﻿namespace Gir.Vns.Dtos.AssetContents;
 
 /// <summary>
-/// Актив.
+/// Лицензионные участки.
 /// </summary>
-public class AssetDto
+public class LicenseAreaDto
 {
     /// <summary>
     /// Идентификатор.

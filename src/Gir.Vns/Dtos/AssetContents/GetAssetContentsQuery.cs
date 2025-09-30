@@ -1,7 +1,7 @@
 ﻿using Step.Lib.Common.Dtos.Filter.Sorting;
 using System.Linq.Expressions;
 
-namespace Gir.Vns.Dtos.AssetContent;
+namespace Gir.Vns.Dtos.AssetContents;
 
 public class GetAssetContentsQuery : BaseSortFilter<AssetContentDto, AssetContentSortPropertyName>
 {

@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.AssetContent;
+﻿namespace Gir.Vns.Dtos.AssetContents;
 
 /// <summary>
 /// Наименование, по которым возможно производить сортировку.

@@ -1,5 +1,5 @@
 ﻿using Gir.Vns.Dtos;
-using Gir.Vns.Dtos.AssetContent;
+using Gir.Vns.Dtos.AssetContents;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Gir.Vns.Controllers;
