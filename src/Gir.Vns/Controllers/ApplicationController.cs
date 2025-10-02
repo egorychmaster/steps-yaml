@@ -1,5 +1,5 @@
-﻿using Gir.Vns.Dtos.Configs;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Step.Lib.Common.Dtos.ApplicationConfig;
 
 namespace Gir.Vns.Controllers;
 
@@ -17,9 +17,8 @@ public class ApplicationController : ControllerBase
     [HttpGet("config")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<ConfigDto> GetConfigs()
+    public ActionResult<ApplicationConfig> GetConfigs()
     {
-        var result = new ConfigDto();
-        return Ok(result);
+        return Ok();
     }
 }

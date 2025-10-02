@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Domain.Constants.Enums;
+﻿namespace Step.Lib.Vns.Core.Shared.Domain.Constants.Enums;
 
 /// <summary>
 /// Перечисление типов механизма загрузки загрузчиков.
