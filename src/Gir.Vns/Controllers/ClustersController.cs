@@ -1,6 +1,6 @@
-﻿using Gir.Vns.Dtos;
-using Gir.Vns.Dtos.Clusters;
+﻿using Gir.Vns.Dtos.Clusters;
 using Microsoft.AspNetCore.Mvc;
+using Step.Lib.Common.Dtos;
 
 namespace Gir.Vns.Controllers;
 

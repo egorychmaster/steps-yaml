@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos;
+﻿namespace Step.Lib.Common.Dtos;
 
 /// <summary>
 /// Результат чтения списка.
