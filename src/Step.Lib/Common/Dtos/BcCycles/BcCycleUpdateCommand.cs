@@ -1,7 +1,7 @@
-﻿using Gir.Vns.Dtos.BcCycles.Enums;
+﻿using Step.Lib.Shared.Domain.Constants.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace Gir.Vns.Dtos.BcCycles;
+namespace Step.Lib.Common.Dtos.BcCycles;
 
 public class BcCycleUpdateCommand
 {

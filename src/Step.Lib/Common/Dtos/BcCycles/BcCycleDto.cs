@@ -1,7 +1,7 @@
-﻿using Gir.Vns.Dtos.BcCycles.Enums;
-using Step.Lib.Shared.Domain.Constants;
+﻿using Step.Lib.Shared.Domain.Constants;
+using Step.Lib.Shared.Domain.Constants.Enums;
 
-namespace Gir.Vns.Dtos.BcCycles;
+namespace Step.Lib.Common.Dtos.BcCycles;
 
 /// <summary>
 /// Цикл БК (данных версии БК).

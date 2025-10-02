@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.BcCycles;
+﻿namespace Step.Lib.Common.Dtos.BcCycles;
 
 /// <summary>
 /// Исполнитель цикла БК (данных версии БК).

@@ -1,6 +1,6 @@
-﻿using Gir.Vns.Dtos.BcCycles.Enums;
+﻿using Step.Lib.Shared.Domain.Constants.Enums;
 
-namespace Gir.Vns.Dtos.BcCycles;
+namespace Step.Lib.Common.Dtos.BcCycles;
 
 /// <summary>
 /// Информация о следующем доступном статусе цикла БК.
