@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 
-namespace Step.Lib.Common.Documents;
+namespace Step.Lib.Common.Dtos.Documents;
 
 public class CreateDocumentCommand
 {

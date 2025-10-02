@@ -1,4 +1,4 @@
-﻿namespace Step.Lib.Common.Documents;
+﻿namespace Step.Lib.Common.Dtos.Documents;
 
 /// <summary>
 /// DTO для документа.

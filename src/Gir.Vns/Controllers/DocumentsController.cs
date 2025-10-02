@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Step.Lib.Common.Documents;
+using Step.Lib.Common.Dtos.Documents;
 
 namespace Gir.Vns.Controllers;
 

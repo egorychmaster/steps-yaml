@@ -1,8 +1,8 @@
-﻿using Step.Lib.Common.Documents.Enums;
+﻿using Step.Lib.Common.Dtos.Documents.Enums;
 using Step.Lib.Common.Dtos.Filter.Sorting;
 using System.Linq.Expressions;
 
-namespace Step.Lib.Common.Documents;
+namespace Step.Lib.Common.Dtos.Documents;
 
 public class GetDocumentsQuery : BaseSortFilter<DocumentDto, DocumentSortPropertyName>
 {
