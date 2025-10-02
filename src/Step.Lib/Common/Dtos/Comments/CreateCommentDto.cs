@@ -1,7 +1,7 @@
-﻿using Gir.Vns.Domain.Constants;
+﻿using Step.Lib.Common.Constants;
 using System.ComponentModel.DataAnnotations;
 
-namespace Gir.Vns.Dtos.Comments;
+namespace Step.Lib.Common.Dtos.Comments;
 
 /// <summary>
 /// DTO для создания комментария.

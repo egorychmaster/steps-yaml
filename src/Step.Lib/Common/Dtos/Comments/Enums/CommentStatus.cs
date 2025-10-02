@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.Comments.Enums;
+﻿namespace Step.Lib.Common.Dtos.Comments.Enums;
 
 /// <summary>
 /// Статусы комментрия.

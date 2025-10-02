@@ -1,6 +1,6 @@
-﻿using Gir.Vns.Dtos.Comments.Enums;
+﻿using Step.Lib.Common.Dtos.Comments.Enums;
 
-namespace Gir.Vns.Dtos.Comments;
+namespace Step.Lib.Common.Dtos.Comments;
 
 /// <summary>
 /// DTO комментария — используется для передачи данных о комментарии

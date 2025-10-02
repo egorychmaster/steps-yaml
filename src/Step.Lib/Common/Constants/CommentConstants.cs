@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Domain.Constants;
+﻿namespace Step.Lib.Common.Constants;
 
 public class CommentConstants
 {

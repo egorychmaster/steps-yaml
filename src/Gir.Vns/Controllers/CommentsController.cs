@@ -1,6 +1,6 @@
 ﻿using Gir.Vns.Dtos;
-using Gir.Vns.Dtos.Comments;
 using Microsoft.AspNetCore.Mvc;
+using Step.Lib.Common.Dtos.Comments;
 
 namespace Gir.Vns.Controllers;
 
