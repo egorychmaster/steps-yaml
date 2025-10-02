@@ -1,5 +1,5 @@
-﻿using Gir.Vns.Dtos.Documents;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Step.Lib.Common.Documents;
 
 namespace Gir.Vns.Controllers;
 
@@ -23,6 +23,17 @@ public class DocumentsController : ControllerBase
     }
 
     /// <summary>
+    /// Сохраняем файлы в хранилище.
+    /// </summary>
+    [HttpPost]
+    [ProducesResponseType(StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public ActionResult<Guid> CreateDocument([FromForm] CreateDocumentCommand dto)
+    {
+        return StatusCode(StatusCodes.Status201Created, new { Id = Guid.NewGuid() });
+    }
+
+    /// <summary>
     /// Удалить документ по Id.
     /// </summary>
     /// <param name="id">Идентификатор документа.</param>
@@ -39,22 +50,29 @@ public class DocumentsController : ControllerBase
     /// Скачивание файла по идентификатору.
     /// </summary>
     /// <param name="id">Идентификатор документа.</param>
+    /// <param name="userId">Идентификатор пользователя.</param>
     /// <returns></returns>
     [HttpGet("{id:guid}/file")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<string> DownloadDocument(Guid id)
+    public ActionResult<string> DownloadDocument(Guid id, Guid? userId)
     {
         return Ok();
     }
 
-    /*
-    +GET 	/api/v1/gir/documents Получение списка ресурсов с пагинацией, фильтрацией и сортировкой.
-    +DELETE 	/api/v1/gir/documents/{id} Удаление ресурса по ID.
-    GET 	/api/v1/gir/documents/{id}/download Загружаем файл из хранилища по идентификатору.
-            /api/v1/gir/documents/{id}/file		Скачивание файла по идентификатору.
-    POST 	/api/v1/gir/documents/upload Сохраняем файлы в хранилище.
-            /api/v1/gir/documents Сохраняем файлы в хранилище
-     */
+    /// <summary>
+    /// Скачивание файла по физическому имени.
+    /// </summary>
+    /// <param name="path">Физическое имя.</param>
+    /// <param name="userId">Идентификатор пользователя.</param>
+    /// <returns></returns>
+    [HttpGet("{path:alpha}/file")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public ActionResult<string> DownloadDocument(string path, Guid? userId)
+    {
+        return Ok();
+    }
 }

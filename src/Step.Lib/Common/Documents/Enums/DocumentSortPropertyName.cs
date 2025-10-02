@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.Documents.Enums;
+﻿namespace Step.Lib.Common.Documents.Enums;
 
 public enum DocumentSortPropertyName
 {

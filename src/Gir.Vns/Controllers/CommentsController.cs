@@ -50,8 +50,7 @@ public class CommentsController : ControllerBase
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
     public ActionResult<Guid> CreateComment(Guid bcVersionId, [FromBody] CreateCommentDto dto)
     {
-        Guid guid = Guid.NewGuid();
-        return CreatedAtAction(nameof(GetCommentById), new { id = guid }, guid);
+        return StatusCode(StatusCodes.Status201Created, new { Id = Guid.NewGuid() });
     }
 
     /// <summary>

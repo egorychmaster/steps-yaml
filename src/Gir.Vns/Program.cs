@@ -1,4 +1,5 @@
 using Microsoft.OpenApi.Models;
+using Step.Lib;
 using Step.Lib.Middlewares.Swagger;
 using System.Reflection;
 
@@ -28,6 +29,11 @@ builder.Services.AddSwaggerGen(options =>
     // XML текущей сборки
     var mainXmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     options.IncludeXmlComments(Path.Combine(baseDirectory, mainXmlFile), includeControllerXmlComments: true);
+
+    // XML из других сборок
+    var externalAssembly = typeof(LibMarker).Assembly;
+    var externalXmlFile = $"{externalAssembly.GetName().Name}.xml";
+    options.IncludeXmlComments(Path.Combine(baseDirectory, externalXmlFile), true);
 });
 
 var app = builder.Build();

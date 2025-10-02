@@ -8,7 +8,7 @@ namespace Gir.Vns.Controllers;
 /// Содержимое активов.
 /// </summary>
 [ApiController]
-[Route("api/v1/gir")]
+[Route("api/v1/gir/asset-contents")]
 public class AssetContentsController : ControllerBase
 {
     /// <summary>
@@ -16,7 +16,7 @@ public class AssetContentsController : ControllerBase
     /// </summary>
     /// <param name="query"></param>
     /// <returns></returns>
-    [HttpGet("asset-contents")]
+    [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
     public ActionResult<CollectionResult<AssetContentDto>> GetAssetContents([FromQuery] GetAssetContentsQuery query)

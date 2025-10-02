@@ -32,7 +32,6 @@ public class ClustersController : ControllerBase
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
     public ActionResult<Guid> CreateCluster([FromBody] ClusterCreateDto dto)
     {
-        Guid guid = Guid.NewGuid();
-        return StatusCode(StatusCodes.Status201Created, new { Id = guid });
+        return StatusCode(StatusCodes.Status201Created, new { Id = Guid.NewGuid() });
     }
 }

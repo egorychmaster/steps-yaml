@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.Documents;
+﻿namespace Step.Lib.Common.Documents;
 
 /// <summary>
 /// DTO для документа.
