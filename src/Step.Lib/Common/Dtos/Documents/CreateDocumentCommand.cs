@@ -21,11 +21,6 @@ public class CreateDocumentCommand
 
     /// <summary>
     /// Тип загрузчика.
-    /// </summary>
-    public int? LoaderSheetType { get; set; }
-
-    /// <summary>
-    /// Тип загрузчика.
     /// Соотношение в сервисах:
     /// <br/> Vns.Core - Ключи в LoaderTypes из api/v1/application/config;
     /// <br/> SpecificIndicators - Ключи в LoaderType из /api/v1/specific-indicators/loaders/types/all; 

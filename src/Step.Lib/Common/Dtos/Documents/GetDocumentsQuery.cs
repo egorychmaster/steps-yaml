@@ -21,20 +21,45 @@ public class GetDocumentsQuery : BaseSortFilter<DocumentDto, DocumentSortPropert
     /// </summary>
     public string? Path { get; init; }
 
-    ///// <summary>
-    ///// Наименования.
-    ///// </summary>
-    //public string[]? Names { get; init; }
+    /// <summary>
+    /// Фильтр по метаданным - ID версии БК на прогнозе в микросервисе, для которых сохраняли документы (ID версии БК на прогнозе).
+    /// </summary>
+    public Guid? BcVersionForecastId { get; set; }
 
-    ///// <summary>
-    ///// Идентификаторы месторождения.
-    ///// </summary>
-    //public Guid[]? FieldIds { get; init; }
+    /// <summary>
+    /// Фильтр по метаданным - список ID версий БК в микросервисе, для которых сохраняли документы.
+    /// </summary>
+    public Guid[]? BcVersionIds { get; set; }
 
-    ///// <summary>
-    ///// Наименование месторождения.
-    ///// </summary>
-    //public string? FieldName { get; init; }
+    /// <summary>
+    /// Фильтр по метаданным - типы загрузчиков, для которых сохраняли документы.
+    /// </summary>
+    public string[]? LoaderTypes { get; set; }
+
+    /// <summary>
+    /// Фильтр по метаданным - список ID скважин в микросервисе, для которых сохраняли документы.
+    /// </summary>
+    public Guid[]? BcVersionDataWellIds { get; set; }
+
+    /// <summary>
+    /// Фильтр по метаданным - список ID пластов в микросервисе, для которых сохраняли документы.
+    /// </summary>
+    public Guid[]? BcVersionDataLayerIds { get; set; }
+
+    /// <summary>
+    /// Фильтр по метаданным - список ID циклов БК в микросервисе, для которых сохраняли документы.
+    /// </summary>
+    public Guid[]? BcCycleIds { get; set; }
+
+    /// <summary>
+    /// Фильтр по метаданным - список ID данных версии БК, для которых сохраняли документы.
+    /// </summary>
+    public Guid[]? BcVersionDataIds { get; set; }
+
+    /// <summary>
+    /// Фильтр по метаданным - список ID группы удельных показателей.
+    /// </summary>
+    public Guid[]? SpecificIndicatorGroupIds { get; set; }
 
     /// <summary>
     /// **Ключи сортировки:**
