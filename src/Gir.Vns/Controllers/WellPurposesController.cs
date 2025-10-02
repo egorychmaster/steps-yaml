@@ -12,7 +12,7 @@ namespace Gir.Vns.Controllers;
 public class WellPurposesController : ControllerBase
 {
     /// <summary>
-    /// Получение списка назначчений скважин с фильтрацией и сортировкой.
+    /// Получение списка назначений скважин с фильтрацией и сортировкой.
     /// </summary>
     /// <returns></returns>
     [HttpGet]
