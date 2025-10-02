@@ -28,7 +28,7 @@ public class DocumentsController : ControllerBase
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<Guid> CreateDocument([FromForm] CreateDocumentCommand dto)
+    public ActionResult<Guid> CreateDocument([FromForm] CreateDocumentCommand dto)//, [FromForm] IEnumerable<IFormFile> files)
     {
         return StatusCode(StatusCodes.Status201Created, new { Id = Guid.NewGuid() });
     }
