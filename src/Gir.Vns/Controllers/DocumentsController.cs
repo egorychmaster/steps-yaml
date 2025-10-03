@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Step.Lib.Common.Dtos;
 using Step.Lib.Common.Dtos.Documents;
 
 namespace Gir.Vns.Controllers;
@@ -17,7 +18,7 @@ public class DocumentsController : ControllerBase
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<DocumentDto> GetModuleTypesAsync([FromQuery] GetDocumentsQuery query)
+    public ActionResult<CollectionResult<DocumentDto>> GetModuleTypesAsync([FromQuery] GetDocumentsQuery query)
     {
         return Ok();
     }
