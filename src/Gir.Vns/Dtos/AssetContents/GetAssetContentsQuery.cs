@@ -10,66 +10,66 @@ public class GetAssetContentsQuery : BaseSortFilter<AssetContentDto, AssetConten
     /// </summary>
     public Guid[]? Ids { get; init; }
 
-    /// <summary>
-    /// Наименование
-    /// </summary>
-    public string? Name { get; init; }
+    ///// <summary>
+    ///// Наименование
+    ///// </summary>
+    //public string? Name { get; init; }
 
-    /// <summary>
-    /// Часть наименования.
-    /// </summary>
-    public string? NameContains { get; init; }
+    ///// <summary>
+    ///// Часть наименования.
+    ///// </summary>
+    //public string? NameContains { get; init; }
 
-    /// <summary>
-    /// Наименования.
-    /// </summary>
-    public string[]? Names { get; init; }
+    ///// <summary>
+    ///// Наименования.
+    ///// </summary>
+    //public string[]? Names { get; init; }
 
-    /// <summary>
-    /// Идентификаторы месторождения.
-    /// </summary>
-    public Guid[]? FieldIds { get; init; }
+    ///// <summary>
+    ///// Идентификаторы месторождения.
+    ///// </summary>
+    //public Guid[]? FieldIds { get; init; }
 
-    /// <summary>
-    /// Наименование месторождения.
-    /// </summary>
-    public string? FieldName { get; init; }
+    ///// <summary>
+    ///// Наименование месторождения.
+    ///// </summary>
+    //public string? FieldName { get; init; }
 
-    /// <summary>
-    /// Массив наименований месторождения.
-    /// </summary>
-    public string[]? FieldNames { get; init; }
+    ///// <summary>
+    ///// Массив наименований месторождения.
+    ///// </summary>
+    //public string[]? FieldNames { get; init; }
 
-    /// <summary>
-    /// Идентификатор лицензионного участка.
-    /// </summary>
-    public Guid LicenseAreaId { get; init; }
+    ///// <summary>
+    ///// Идентификатор лицензионного участка.
+    ///// </summary>
+    //public Guid LicenseAreaId { get; init; }
 
-    /// <summary>
-    /// Массив идентификаторов лицензионного участка.
-    /// </summary>
-    public Guid[]? LicenseAreaIds { get; init; }
+    ///// <summary>
+    ///// Массив идентификаторов лицензионного участка.
+    ///// </summary>
+    //public Guid[]? LicenseAreaIds { get; init; }
 
-    /// <summary>
-    /// Наименование лицензионного участка.
-    /// </summary>
-    public string? LicenseAreaName { get; init; }
+    ///// <summary>
+    ///// Наименование лицензионного участка.
+    ///// </summary>
+    //public string? LicenseAreaName { get; init; }
 
-    /// <summary>
-    /// Массив наименований лицензионного участка.
-    /// </summary>
-    public string[]? LicenseAreaNames { get; init; }
+    ///// <summary>
+    ///// Массив наименований лицензионного участка.
+    ///// </summary>
+    //public string[]? LicenseAreaNames { get; init; }
 
-    /// <summary>
-    /// Массив ID Активов для фильтрации.
-    /// </summary>
-    public Guid[]? AssetIds { get; init; }
+    ///// <summary>
+    ///// Массив ID Активов для фильтрации.
+    ///// </summary>
+    //public Guid[]? AssetIds { get; init; }
 
     /// <summary>
     /// **Ключи сортировки:**
     /// - DateCreated
     /// 
-    /// **Пример использования:** `sortOptions=DateCreated`
+    /// **Пример использования:** `sortOptions=DateCreated.asc`
     /// 
     /// Сортировки: `asc` - восходящая, `desc` - нисходящая.
     /// 
