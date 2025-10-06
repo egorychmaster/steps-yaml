@@ -4,11 +4,11 @@ using Step.Lib.Common.Dtos.BcCycles;
 namespace Gir.Vns.Controllers;
 
 /// <summary>
-/// Цикл (шаг) данных версии БК.
+/// Шаг(цикл) данных версии БК.
 /// </summary>
 [ApiController]
-[Route("api/v1/gir/bcs/versions/cycles")]
-public class BcCyclesController : ControllerBase
+[Route("api/v1/vns/{processType:alpha}/{bcVersionId:guid}/gir")]
+public class GirController : ControllerBase
 {
     /// <summary>
     /// Вернуть данные цикла(шага) по ID, в том числе и его статус.
@@ -26,7 +26,7 @@ public class BcCyclesController : ControllerBase
     /// <summary>
     /// Полное множественное редактирование цикла(шага) по ID.
     /// </summary>
-    [HttpPut("batch")]
+    [HttpPut]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]

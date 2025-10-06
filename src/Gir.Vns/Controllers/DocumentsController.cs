@@ -62,18 +62,18 @@ public class DocumentsController : ControllerBase
         return Ok();
     }
 
-    /// <summary>
-    /// Скачивание файла по физическому имени.
-    /// </summary>
-    /// <param name="path">Физическое имя.</param>
-    /// <param name="userId">Идентификатор пользователя.</param>
-    /// <returns></returns>
-    [HttpGet("{path:alpha}/file")]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
-    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<string> DownloadDocument(string path, Guid? userId)
-    {
-        return Ok();
-    }
+    ///// <summary>
+    ///// Скачивание файла по физическому имени.
+    ///// </summary>
+    ///// <param name="path">Физическое имя.</param>
+    ///// <param name="userId">Идентификатор пользователя.</param>
+    ///// <returns></returns>
+    //[HttpGet("{path:alpha}/file")]
+    //[ProducesResponseType(StatusCodes.Status200OK)]
+    //[ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+    //[ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    //public ActionResult<string> DownloadDocument(string path, Guid? userId)
+    //{
+    //    return Ok();
+    //}
 }
