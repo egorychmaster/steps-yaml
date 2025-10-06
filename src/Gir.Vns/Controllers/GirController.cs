@@ -24,9 +24,9 @@ public class GirController : ControllerBase
     }
 
     /// <summary>
-    /// Полное множественное редактирование цикла(шага) по ID.
+    /// Редактирование шага(цикла) по ID.
     /// </summary>
-    [HttpPut]
+    [HttpPut("{id:guid}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
