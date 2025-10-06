@@ -8,7 +8,7 @@ namespace Gir.Vns.Controllers;
 /// Документы.
 /// </summary>
 [ApiController]
-[Route("api/v1/gir/documents")]
+[Route("api/v1/vns/{processType:alpha}/{bcVersionId:guid}/gir/documents")]
 public class DocumentsController : ControllerBase
 {
     /// <summary>
@@ -29,7 +29,7 @@ public class DocumentsController : ControllerBase
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<Guid> CreateDocument([FromForm] CreateDocumentCommand dto)//, [FromForm] IEnumerable<IFormFile> files)
+    public ActionResult<Guid> CreateDocument([FromForm] CreateDocumentCommand dto)
     {
         return StatusCode(StatusCodes.Status201Created, new { Id = Guid.NewGuid() });
     }
@@ -61,19 +61,4 @@ public class DocumentsController : ControllerBase
     {
         return Ok();
     }
-
-    ///// <summary>
-    ///// Скачивание файла по физическому имени.
-    ///// </summary>
-    ///// <param name="path">Физическое имя.</param>
-    ///// <param name="userId">Идентификатор пользователя.</param>
-    ///// <returns></returns>
-    //[HttpGet("{path:alpha}/file")]
-    //[ProducesResponseType(StatusCodes.Status200OK)]
-    //[ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
-    //[ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    //public ActionResult<string> DownloadDocument(string path, Guid? userId)
-    //{
-    //    return Ok();
-    //}
 }
