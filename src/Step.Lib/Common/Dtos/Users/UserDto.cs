@@ -13,7 +13,7 @@ public class UserDto
     /// <summary>
     /// Числовое ID (из БД монолита).
     /// </summary>
-    public long? IdInt { get; set; }
+    //public long? IdInt { get; set; }
 
     /// <summary>
     /// Имя.

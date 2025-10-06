@@ -12,16 +12,6 @@ public class GetUsersQuery : BaseSortFilter<UserDto, UserSortPropertyName>
     public Guid[]? Ids { get; init; }
 
     /// <summary>
-    /// Типы циклов БК, к которым относится пользователь (хотя бы одно совпадение).
-    /// </summary>
-    public string[]? BcVersionCycleTypes { get; init; }
-
-    /// <summary>
-    /// Типы категорий процессов, к которым относится пользователь (хотя бы одно совпадение).
-    /// </summary>
-    public int[]? ProcessCategoryTypes { get; init; }
-
-    /// <summary>
     /// Email.
     /// </summary>
     public string? Email { get; init; }
