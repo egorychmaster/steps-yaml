@@ -25,7 +25,7 @@ public class CommentsController : ControllerBase
     }
 
     /// <summary>
-    /// Получить все комментарии для версии БК.
+    /// Получение списка комментариев.
     /// </summary>
     /// <param name="bcVersionId">Идентификатор версии БК.</param>
     /// <param name="includeArchived">Включать архивные.</param>
