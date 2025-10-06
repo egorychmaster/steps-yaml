@@ -8,14 +8,14 @@ namespace Gir.Vns.Controllers;
 /// Комментарии.
 /// </summary>
 [ApiController]
-[Route("api/v1/gir")]
+[Route("api/v1/vns/{processType:alpha}/{bcVersionId:guid}/gir/comments")]
 public class CommentsController : ControllerBase
 {
     /// <summary>
     /// Получить конкретный комментарий.
     /// </summary>
     /// <param name="id">Идентификатор комментария.</param>
-    [HttpGet("comments/{id:guid}")]
+    [HttpGet("{id:guid}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
@@ -31,7 +31,7 @@ public class CommentsController : ControllerBase
     /// <param name="includeArchived">Включать архивные.</param>
     /// <param name="includeDeleted">Включать удалённые.</param>
     /// <returns></returns>
-    [HttpGet("{bcVersionId:guid}/comments")]
+    [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
     public ActionResult<CollectionResult<CommentListDto>> GetComments(Guid bcVersionId, [FromQuery] bool includeArchived = false,
@@ -45,7 +45,7 @@ public class CommentsController : ControllerBase
     /// Добавить комментарий.
     /// </summary>
     /// <param name="bcVersionId">Идентификатор версии БК.</param>
-    [HttpPost("{bcVersionId:guid}/comments")]
+    [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
     public ActionResult<Guid> CreateComment(Guid bcVersionId, [FromBody] CreateCommentDto dto)
@@ -57,7 +57,7 @@ public class CommentsController : ControllerBase
     /// Изменить комментарий.
     /// </summary>
     /// <param name="id">Идентификатор комментария.</param>
-    [HttpPut("comments/{id:guid}")]
+    [HttpPut("{id:guid}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
@@ -71,7 +71,7 @@ public class CommentsController : ControllerBase
     /// </summary>
     /// <param name="id">Идентификатор комментария.</param>
     /// <returns></returns>
-    [HttpDelete("comments/{id:guid}")]
+    [HttpDelete("{id:guid}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     //[ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
@@ -84,7 +84,7 @@ public class CommentsController : ControllerBase
     /// Отправить в архив комментарий и его дочерние комментарии.
     /// </summary>
     /// <param name="id">Идентификатор комментария.</param>
-    [HttpPut("comments/{id:guid}/archive")]
+    [HttpPut("{id:guid}/archive")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
