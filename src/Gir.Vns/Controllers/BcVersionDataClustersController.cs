@@ -5,7 +5,7 @@ using Step.Lib.Common.Dtos;
 namespace Gir.Vns.Controllers;
 
 /// <summary>
-/// 
+/// Кусты шага.
 /// </summary>
 [ApiController]
 [Route("api/v1/vns/{processType:alpha}/{bcVersionId:guid}/gir/clusters")]
