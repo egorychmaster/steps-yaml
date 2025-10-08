@@ -9,7 +9,7 @@ namespace Gir.Vns.Controllers;
 /// Загрузчики.
 /// </summary>
 [ApiController]
-[Route("api/v1/vns/{processType:alpha}/{bcVersionId:guid}/gir/loaders")]
+[Route("api/v1/vns/{processType:alpha}/{bcVersionDataId:guid}/gir/loaders")]
 public class LoadersController : ControllerBase
 {
     /// <summary>

@@ -8,7 +8,7 @@ namespace Gir.Vns.Controllers;
 /// Документы.
 /// </summary>
 [ApiController]
-[Route("api/v1/vns/{processType:alpha}/{bcVersionId:guid}/gir/documents")]
+[Route("api/v1/vns/{processType:alpha}/{bcVersionDataId:guid}/gir/documents")]
 public class DocumentsController : ControllerBase
 {
     /// <summary>

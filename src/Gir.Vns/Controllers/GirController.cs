@@ -7,7 +7,7 @@ namespace Gir.Vns.Controllers;
 /// Шаг(цикл) данных версии БК.
 /// </summary>
 [ApiController]
-[Route("api/v1/vns/{processType:alpha}/{bcVersionId:guid}/gir")]
+[Route("api/v1/vns/{processType:alpha}/{bcVersionDataId:guid}/gir")]
 public class GirController : ControllerBase
 {
     /// <summary>
