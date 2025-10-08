@@ -8,7 +8,7 @@ namespace Gir.Vns.Controllers;
 /// Пользователи.
 /// </summary>
 [ApiController]
-[Route("api/v1/vns/{processType:alpha}/{bcVersionDataId:guid}/gir/users")]
+[Route("api/v1/vns/{processType:alpha}/{bcVersionSliceId:guid}/gir/users")]
 public class UsersController : ControllerBase
 {
     /// <summary>

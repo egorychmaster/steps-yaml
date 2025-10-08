@@ -8,7 +8,7 @@ namespace Gir.Vns.Controllers;
 /// Комментарии.
 /// </summary>
 [ApiController]
-[Route("api/v1/vns/{processType:alpha}/{bcVersionId:guid}/gir/comments")]
+[Route("api/v1/vns/{processType:alpha}/{bcVersionSliceId:guid}/gir/comments")]
 public class CommentsController : ControllerBase
 {
     /// <summary>

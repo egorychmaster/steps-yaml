@@ -9,7 +9,7 @@ namespace Gir.Vns.Controllers;
 /// Загрузчики.
 /// </summary>
 [ApiController]
-[Route("api/v1/vns/{processType:alpha}/{bcVersionDataId:guid}/gir/loaders")]
+[Route("api/v1/vns/{processType:alpha}/{bcVersionSliceId:guid}/gir/loaders")]
 public class LoadersController : ControllerBase
 {
     /// <summary>
@@ -23,7 +23,7 @@ public class LoadersController : ControllerBase
     [HttpPost("geology")]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<Guid> CreateDocument([FromQuery] bool ValidateOnly, [FromBody] GeologyOptions dto)
+    public ActionResult<LoaderCreateResult> CreateDocument([FromQuery] bool ValidateOnly, [FromBody] GeologyOptions dto)
     {
         return StatusCode(StatusCodes.Status201Created, new { Id = Guid.NewGuid() });
     }
