@@ -5,17 +5,15 @@ using Step.Lib.Common.Dtos;
 namespace Gir.Vns.Controllers;
 
 /// <summary>
-/// Слои месторождений.
+/// Слои (пласты) месторождений.
 /// </summary>
 [ApiController]
-[Route("api/v1/gir/layers")]
-public class LayersController : ControllerBase
+[Route("api/v1/vns/{processType:alpha}/{bcVersionSliceId:guid}/gir/layers/catalog")]
+public class CatalogLayersController : ControllerBase
 {
     /// <summary>
     /// Получение списка слоёв (пластов) месторожедний с фильтрацией и сортировкой.
     /// </summary>
-    /// <param name="query"></param>
-    /// <returns></returns>
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]

@@ -11,36 +11,36 @@ public class GetLayersQuery : BaseSortFilter<LayerDto, LayerSortPropertyName>
     /// </summary>
     public Guid[]? Ids { get; init; }
 
-    /// <summary>
-    /// Номер (алиас для Number).
-    /// </summary>
-    public string? Name { get; init; }
+    ///// <summary>
+    ///// Номер (алиас для Number).
+    ///// </summary>
+    //public string? Name { get; init; }
 
-    /// <summary>
-    /// Часть номера (алиас для NumberContains).
-    /// </summary>
-    public string? NameContains { get; init; }
+    ///// <summary>
+    ///// Часть номера (алиас для NumberContains).
+    ///// </summary>
+    //public string? NameContains { get; init; }
 
-    /// <summary>
-    /// Наименования.
-    /// </summary>
-    public string[]? Names { get; init; }
+    ///// <summary>
+    ///// Наименования.
+    ///// </summary>
+    //public string[]? Names { get; init; }
 
-    /// <summary>
-    /// Идентификаторы месторождения.
-    /// </summary>
-    public Guid[]? FieldIds { get; init; }
+    ///// <summary>
+    ///// Идентификаторы месторождения.
+    ///// </summary>
+    //public Guid[]? FieldIds { get; init; }
 
-    /// <summary>
-    /// Наименование месторождения.
-    /// </summary>
-    public string? FieldName { get; init; }
+    ///// <summary>
+    ///// Наименование месторождения.
+    ///// </summary>
+    //public string? FieldName { get; init; }
 
     /// <summary>
     /// **Ключи сортировки:**
     /// - DateCreated
     /// 
-    /// **Пример использования:** `sortOptions=DateCreated`
+    /// **Пример использования:** `sortOptions=DateCreated.asc`
     /// 
     /// Сортировки: `asc` - восходящая, `desc` - нисходящая.
     /// 
