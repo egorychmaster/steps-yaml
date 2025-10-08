@@ -30,7 +30,7 @@ public class BcVersionSliceWellsController : ControllerBase
     /// Получение координат ствола скважины.
     /// </summary>
     /// <returns></returns>
-    [HttpGet("coordinates")]
+    [HttpGet("bore-coordinates")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
     public ActionResult<CollectionResult<WellBoreCoordinateDto>> GetBcVersionDataWellCoordinatesAsync([FromQuery] GetBcVersionDataWellCoordinatesQuery query)
