@@ -8,8 +8,8 @@ namespace Gir.Vns.Controllers;
 /// Содержимое активов.
 /// </summary>
 [ApiController]
-[Route("api/v1/vns/{processType:alpha}/{bcVersionDataId:guid}/gir/asset-contents")]
-public class AssetContentsController : ControllerBase
+[Route("api/v1/vns/{processType:alpha}/{bcVersionSliceId:guid}/gir/asset-contents/catalog")]
+public class CatalogAssetContentsController : ControllerBase
 {
     /// <summary>
     /// Получение списка содержимого активов с фильтрацией и сортировкой.

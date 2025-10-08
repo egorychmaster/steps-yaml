@@ -1,6 +1,6 @@
 ﻿namespace Step.Lib.Common.Dtos.Comments;
 
-public class CreateCommentResult
+public class CreateCommentResultDto
 {
     /// <summary>
     /// Идентификатор, созданного комментария.

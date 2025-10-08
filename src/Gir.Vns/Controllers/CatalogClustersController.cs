@@ -8,8 +8,8 @@ namespace Gir.Vns.Controllers;
 /// Кусты.
 /// </summary>
 [ApiController]
-[Route("api/v1/vns/{processType:alpha}/{bcVersionDataId:guid}/gir/clusters/catalog")]
-public class ClustersController : ControllerBase
+[Route("api/v1/vns/{processType:alpha}/{bcVersionSliceId:guid}/gir/clusters/catalog")]
+public class CatalogClustersController : ControllerBase
 {
     /// <summary>
     /// Получение списка типов кластеров с фильтрацией и сортировкой.
@@ -30,7 +30,7 @@ public class ClustersController : ControllerBase
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<Guid> CreateCluster([FromBody] ClusterCreateDto dto)
+    public ActionResult<ClusterCreateResultDto> CreateCluster([FromBody] ClusterCreateDto dto)
     {
         return StatusCode(StatusCodes.Status201Created, new { Id = Guid.NewGuid() });
     }

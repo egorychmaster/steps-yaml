@@ -23,7 +23,7 @@ public class LoadersController : ControllerBase
     [HttpPost("geology")]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<LoaderCreateResult> CreateDocument([FromQuery] bool ValidateOnly, [FromBody] GeologyOptions dto)
+    public ActionResult<LoaderCreateResultDto> CreateDocument([FromQuery] bool ValidateOnly, [FromBody] GeologyOptions dto)
     {
         return StatusCode(StatusCodes.Status201Created, new { Id = Guid.NewGuid() });
     }

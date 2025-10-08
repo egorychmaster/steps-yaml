@@ -8,7 +8,7 @@ namespace Gir.Vns.Controllers;
 /// Кусты шага.
 /// </summary>
 [ApiController]
-[Route("api/v1/vns/{processType:alpha}/{bcVersionDataId:guid}/gir/clusters")]
+[Route("api/v1/vns/{processType:alpha}/{bcVersionSliceId:guid}/gir/clusters")]
 public class BcVersionDataClustersController : ControllerBase
 {
     /// <summary>
