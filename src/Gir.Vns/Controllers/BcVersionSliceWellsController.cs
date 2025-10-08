@@ -7,11 +7,11 @@ using Step.Lib.Common.Dtos;
 namespace Gir.Vns.Controllers;
 
 /// <summary>
-/// Скважина данных версии БК.
+/// Скважина среза версии БК.
 /// </summary>
 [ApiController]
-[Route("api/v1/gir/bcs/versions/data/well")]
-public class BcVersionDataWellsController : ControllerBase
+[Route("api/v1/vns/{processType:alpha}/{bcVersionSliceId:guid}/gir/wells")]
+public class BcVersionSliceWellsController : ControllerBase
 {
     /// <summary>
     /// Получение списка скважин с фильтрацией и сортировкой.

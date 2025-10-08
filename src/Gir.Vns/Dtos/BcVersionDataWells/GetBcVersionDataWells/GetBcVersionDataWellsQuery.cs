@@ -12,9 +12,9 @@ public class GetBcVersionDataWellsQuery : BaseSortFilter<BcVersionDataWellDto, B
     public Guid[]? Ids { get; init; }
 
     /// <summary>
-    /// Фильтр - по ID данных версии БК, в которые включены скважины.
+    /// Фильтр - по ID срезам(данных) версии БК, в которые включены скважины.
     /// </summary>
-    public Guid[]? BcVersionDataIds { get; init; }
+    public Guid[]? BcVersionSliceIds { get; init; }
 
     /// <summary>
     /// **Ключи сортировки:**
