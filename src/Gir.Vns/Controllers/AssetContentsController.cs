@@ -8,7 +8,7 @@ namespace Gir.Vns.Controllers;
 /// Содержимое активов.
 /// </summary>
 [ApiController]
-[Route("api/v1/vns/{processType:alpha}/{bcVersionId:guid}/gir/asset-contents")]
+[Route("api/v1/vns/{processType:alpha}/{bcVersionDataId:guid}/gir/asset-contents")]
 public class AssetContentsController : ControllerBase
 {
     /// <summary>
