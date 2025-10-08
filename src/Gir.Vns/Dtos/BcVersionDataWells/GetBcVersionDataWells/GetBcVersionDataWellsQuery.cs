@@ -20,7 +20,7 @@ public class GetBcVersionDataWellsQuery : BaseSortFilter<BcVersionDataWellDto, B
     /// **Ключи сортировки:**
     /// - DateCreated
     /// 
-    /// **Пример использования:** `sortOptions=DateCreated`
+    /// **Пример использования:** `sortOptions=DateCreated.asc`
     /// 
     /// Сортировки: `asc` - восходящая, `desc` - нисходящая.
     /// 
