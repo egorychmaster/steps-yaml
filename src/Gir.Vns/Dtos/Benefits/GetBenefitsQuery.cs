@@ -4,32 +4,32 @@ using System.Linq.Expressions;
 
 namespace Gir.Vns.Dtos.Benefits;
 
-public class GetBenefitsQuery : BaseSortFilter<BenefitDto, BenefitSortPropertyName>
+public class GetBenefitsQuery : BaseSortFilter<BenefitDmo, BenefitSortPropertyName>
 {
     /// <summary>
     /// Идентификаторы.
     /// </summary>
     public Guid[]? Ids { get; init; }
 
-    /// <summary>
-    /// Тип льготы.
-    /// </summary>
-    public int? Type { get; init; }
+    ///// <summary>
+    ///// Тип льготы.
+    ///// </summary>
+    //public int? Type { get; init; }
 
-    /// <summary>
-    /// Номер Скважины.
-    /// </summary>
-    public string? WellNumber { get; init; }
+    ///// <summary>
+    ///// Номер Скважины.
+    ///// </summary>
+    //public string? WellNumber { get; init; }
 
-    /// <summary>
-    /// Наименование пласта.
-    /// </summary>
-    public string? LayerFieldName { get; init; }
+    ///// <summary>
+    ///// Наименование пласта.
+    ///// </summary>
+    //public string? LayerFieldName { get; init; }
 
-    /// <summary>
-    /// Список Идентификаторов справочника Состав актива.
-    /// </summary>
-    public string[]? AssetContentIds { get; init; }
+    ///// <summary>
+    ///// Список Идентификаторов справочника Состав актива.
+    ///// </summary>
+    //public string[]? AssetContentIds { get; init; }
 
     /// <summary>
     /// **Ключи сортировки:**
@@ -48,7 +48,7 @@ public class GetBenefitsQuery : BaseSortFilter<BenefitDto, BenefitSortPropertyNa
     /// <summary>
     /// Поддерживаемые сортировки.
     /// </summary>
-    protected override Dictionary<BenefitSortPropertyName, Expression<Func<BenefitDto, object>>> SupportedSortings =>
+    protected override Dictionary<BenefitSortPropertyName, Expression<Func<BenefitDmo, object>>> SupportedSortings =>
         new()
         {
             [BenefitSortPropertyName.DateCreated] = x => x.DateCreated
