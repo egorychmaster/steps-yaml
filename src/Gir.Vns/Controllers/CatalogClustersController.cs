@@ -1,4 +1,4 @@
-﻿using Gir.Vns.Dtos.Clusters;
+﻿using Gir.Vns.Dtos.CatalogClusters;
 using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos;
 

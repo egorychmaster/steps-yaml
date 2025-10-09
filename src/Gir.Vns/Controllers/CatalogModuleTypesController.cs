@@ -1,4 +1,4 @@
-﻿using Gir.Vns.Dtos.ModuleTypes;
+﻿using Gir.Vns.Dtos.CatalogModuleTypes;
 using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos;
 

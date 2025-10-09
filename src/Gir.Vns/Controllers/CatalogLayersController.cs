@@ -1,4 +1,4 @@
-﻿using Gir.Vns.Dtos.Layers;
+﻿using Gir.Vns.Dtos.CatalogLayers;
 using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos;
 

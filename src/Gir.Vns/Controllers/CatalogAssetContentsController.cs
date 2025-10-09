@@ -1,4 +1,4 @@
-﻿using Gir.Vns.Dtos.AssetContents;
+﻿using Gir.Vns.Dtos.CatalogAssetContents;
 using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos;
 
