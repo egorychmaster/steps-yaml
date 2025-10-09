@@ -8,7 +8,7 @@ namespace Gir.Vns.Controllers;
 /// Слои (пласты) месторождений.
 /// </summary>
 [ApiController]
-[Route("api/v1/vns/{processType:alpha}/{bcVersionSliceId:guid}/gir/layers/catalog")]
+[Route("api/v1/vns/gir/catalog/layers")]
 public class CatalogLayersController : ControllerBase
 {
     /// <summary>
