@@ -1,6 +1,6 @@
 ﻿using Gir.Vns.Dtos.Common.EconomicSummaryModule;
 
-namespace Gir.Vns.Dtos.BcVersionDataClusters;
+namespace Gir.Vns.Dtos.BcVersionSliceClusters;
 
 /// <summary>
 /// Куст данных версии БК.

@@ -1,4 +1,4 @@
-﻿using Gir.Vns.Dtos.BcVersionDataClusters;
+﻿using Gir.Vns.Dtos.BcVersionSliceClusters;
 using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos;
 
