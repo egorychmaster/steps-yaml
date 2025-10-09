@@ -51,9 +51,9 @@ public class BcVersionSliceWellsController : ControllerBase
     }
 
     /// <summary>
-    /// Изменение координат стволов скважин.
+    /// Множественное редактирование координат стволов скважин.
     /// </summary>
-    [HttpPut("bore-coordinates")]
+    [HttpPut("bore-coordinates/batch")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
     public ActionResult UpdateWellCoordinates([FromBody] DataWellCoordinatesUpdateDto dto)
