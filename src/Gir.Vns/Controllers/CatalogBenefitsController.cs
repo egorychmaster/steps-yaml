@@ -18,7 +18,7 @@ public class CatalogBenefitsController : ControllerBase
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<CollectionResult<BenefitDto>> GetWellTypesAsync([FromQuery] GetBenefitsQuery query)
+    public ActionResult<CollectionResult<CatalogBenefitDto>> GetWellTypesAsync([FromQuery] GetCatalogBenefitsQuery query)
     {
         return Ok();
     }

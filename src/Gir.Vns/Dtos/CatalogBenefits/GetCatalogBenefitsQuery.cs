@@ -1,11 +1,10 @@
-﻿using Gir.Vns.Dtos.Benefits;
-using Gir.Vns.Dtos.CatalogBenefits.Enums;
+﻿using Gir.Vns.Dtos.CatalogBenefits.Enums;
 using Step.Lib.Common.Dtos.Filter.Sorting;
 using System.Linq.Expressions;
 
 namespace Gir.Vns.Dtos.CatalogBenefits;
 
-public class GetBenefitsQuery : BaseSortFilter<BenefitDmo, BenefitSortPropertyName>
+public class GetCatalogBenefitsQuery : BaseSortFilter<CatalogBenefitDto, CatalogBenefitSortPropertyName>
 {
     /// <summary>
     /// Идентификаторы.
@@ -49,9 +48,9 @@ public class GetBenefitsQuery : BaseSortFilter<BenefitDmo, BenefitSortPropertyNa
     /// <summary>
     /// Поддерживаемые сортировки.
     /// </summary>
-    protected override Dictionary<BenefitSortPropertyName, Expression<Func<BenefitDmo, object>>> SupportedSortings =>
+    protected override Dictionary<CatalogBenefitSortPropertyName, Expression<Func<CatalogBenefitDto, object>>> SupportedSortings =>
         new()
         {
-            [BenefitSortPropertyName.DateCreated] = x => x.DateCreated
+            [CatalogBenefitSortPropertyName.DateCreated] = x => x.DateCreated
         };
 }

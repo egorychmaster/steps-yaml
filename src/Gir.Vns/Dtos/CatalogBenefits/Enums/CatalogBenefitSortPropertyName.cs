@@ -1,6 +1,6 @@
 ﻿namespace Gir.Vns.Dtos.CatalogBenefits.Enums;
 
-public enum BenefitSortPropertyName
+public enum CatalogBenefitSortPropertyName
 {
     DateCreated
 }

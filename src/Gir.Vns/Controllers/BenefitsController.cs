@@ -1,4 +1,5 @@
 ﻿using Gir.Vns.Dtos.Benefits;
+using Gir.Vns.Dtos.CatalogBenefits;
 using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos;
 
@@ -21,5 +22,15 @@ public class BenefitsController : ControllerBase
 		льготы привязаны к скважине
      */
 
-    
+    /// <summary>
+    /// Получение списка льгот с фильтрацией и сортировкой.
+    /// </summary>
+    /// <returns></returns>
+    [HttpGet]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public ActionResult<CollectionResult<BenefitSlmDto>> GetBenefitsAsync([FromQuery] GetBenefitsQuery query)
+    {
+        return Ok();
+    }
 }

@@ -3,7 +3,7 @@
 /// <summary>
 /// Льгота.
 /// </summary>
-public class BenefitDto
+public class CatalogBenefitDto
 {
     /// <summary>
     /// Идентификатор.
