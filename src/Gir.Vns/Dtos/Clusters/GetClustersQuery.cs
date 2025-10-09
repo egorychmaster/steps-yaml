@@ -45,7 +45,7 @@ public class GetClustersQuery: BaseSortFilter<ClusterDto, ClusterSortPropertyNam
     /// **Ключи сортировки:**
     /// - DateCreated
     /// 
-    /// **Пример использования:** `sortOptions=DateCreated`
+    /// **Пример использования:** `sortOptions=DateCreated.asc`
     /// 
     /// Сортировки: `asc` - восходящая, `desc` - нисходящая.
     /// 

@@ -1,10 +1,10 @@
-﻿using Gir.Vns.Dtos.ModuleTypes.Enums;
+﻿using Gir.Vns.Dtos.CatalogWells.Enums;
 using Step.Lib.Common.Dtos.Filter.Sorting;
 using System.Linq.Expressions;
 
-namespace Gir.Vns.Dtos.ModuleTypes;
+namespace Gir.Vns.Dtos.CatalogWells;
 
-public class GetModuleTypesQuery : BaseSortFilter<ModuleTypeDto, ModuleTypeSortPropertyName>
+public class GetWellsQuery : BaseSortFilter<WellDto, WellSortPropertyName>
 {
     /// <summary>
     /// Идентификаторы.
@@ -28,9 +28,9 @@ public class GetModuleTypesQuery : BaseSortFilter<ModuleTypeDto, ModuleTypeSortP
     /// <summary>
     /// Поддерживаемые сортировки.
     /// </summary>
-    protected override Dictionary<ModuleTypeSortPropertyName, Expression<Func<ModuleTypeDto, object>>> SupportedSortings =>
+    protected override Dictionary<WellSortPropertyName, Expression<Func<WellDto, object>>> SupportedSortings =>
         new()
         {
-            [ModuleTypeSortPropertyName.DateCreated] = x => x.DateCreated
+            [WellSortPropertyName.DateCreated] = x => x.DateCreated
         };
 }

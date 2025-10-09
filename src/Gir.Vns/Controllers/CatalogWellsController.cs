@@ -1,5 +1,6 @@
 ﻿using Gir.Vns.Dtos.CatalogWells;
 using Microsoft.AspNetCore.Mvc;
+using Step.Lib.Common.Dtos;
 
 namespace Gir.Vns.Controllers;
 
@@ -10,6 +11,18 @@ namespace Gir.Vns.Controllers;
 [Route("api/v1/vns/gir/catalog/wells")]
 public class CatalogWellsController : ControllerBase
 {
+    /// <summary>
+    /// Получение списка скважин с фильтрацией и сортировкой.
+    /// </summary>
+    /// <returns></returns>
+    [HttpGet]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public ActionResult<CollectionResult<WellDto>> GetWellsAsync([FromQuery] GetWellsQuery query)
+    {
+        return Ok();
+    }
+
     /// <summary>
     /// Создание скважины в справочнике.
     /// </summary>
