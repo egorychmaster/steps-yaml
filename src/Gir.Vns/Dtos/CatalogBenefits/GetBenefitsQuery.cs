@@ -1,8 +1,9 @@
-﻿using Gir.Vns.Dtos.Benefits.Enums;
+﻿using Gir.Vns.Dtos.Benefits;
+using Gir.Vns.Dtos.CatalogBenefits.Enums;
 using Step.Lib.Common.Dtos.Filter.Sorting;
 using System.Linq.Expressions;
 
-namespace Gir.Vns.Dtos.Benefits;
+namespace Gir.Vns.Dtos.CatalogBenefits;
 
 public class GetBenefitsQuery : BaseSortFilter<BenefitDmo, BenefitSortPropertyName>
 {
@@ -35,7 +36,7 @@ public class GetBenefitsQuery : BaseSortFilter<BenefitDmo, BenefitSortPropertyNa
     /// **Ключи сортировки:**
     /// - DateCreated
     /// 
-    /// **Пример использования:** `sortOptions=DateCreated`
+    /// **Пример использования:** `sortOptions=DateCreated.asc`
     /// 
     /// Сортировки: `asc` - восходящая, `desc` - нисходящая.
     /// 

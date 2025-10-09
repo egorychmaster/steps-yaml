@@ -21,15 +21,5 @@ public class BenefitsController : ControllerBase
 		льготы привязаны к скважине
      */
 
-    /// <summary>
-    /// Получение списка льгот с фильтрацией и сортировкой.
-    /// </summary>
-    /// <returns></returns>
-    [HttpGet]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<CollectionResult<BenefitDmo>> GetWellTypesAsync([FromQuery] GetBenefitsQuery query)
-    {
-        return Ok();
-    }
+    
 }
