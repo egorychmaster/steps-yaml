@@ -8,8 +8,8 @@ namespace Gir.Vns.Controllers;
 /// Типы модулей.
 /// </summary>
 [ApiController]
-[Route("api/v1/gir/module-types")]
-public class ModuleTypesController : ControllerBase
+[Route("api/v1/vns/gir/catalog/module-types")]
+public class CatalogModuleTypesController : ControllerBase
 {
     /// <summary>
     /// Получение списка типов модулей с фильтрацией и сортировкой.
