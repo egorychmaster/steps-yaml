@@ -1,6 +1,6 @@
-﻿using Gir.Vns.Dtos.BcVersionDataWells.GetBcVersionDataWells.Enums;
+﻿using Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells.Enums;
 
-namespace Gir.Vns.Dtos.BcVersionDataWells.GetBcVersionDataWells;
+namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells;
 
 /// <summary>
 /// Атрибуты скважины данных версии БК.

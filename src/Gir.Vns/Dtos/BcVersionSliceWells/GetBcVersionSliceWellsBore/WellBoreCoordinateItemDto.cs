@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.BcVersionDataWells.GetBcVersionDataWellCoordinate;
+﻿namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWellsBore;
 
 /// <summary>
 /// Координатная точка ствола скважины.

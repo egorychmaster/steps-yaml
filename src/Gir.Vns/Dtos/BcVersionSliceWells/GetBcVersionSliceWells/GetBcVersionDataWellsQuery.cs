@@ -1,8 +1,8 @@
-﻿using Gir.Vns.Dtos.BcVersionDataWells.GetBcVersionDataWells.Enums;
+﻿using Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells.Enums;
 using Step.Lib.Common.Dtos.Filter.Sorting;
 using System.Linq.Expressions;
 
-namespace Gir.Vns.Dtos.BcVersionDataWells.GetBcVersionDataWells;
+namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells;
 
 public class GetBcVersionDataWellsQuery : BaseSortFilter<BcVersionDataWellDto, BcVersionDataWellSortPropertyName>
 {

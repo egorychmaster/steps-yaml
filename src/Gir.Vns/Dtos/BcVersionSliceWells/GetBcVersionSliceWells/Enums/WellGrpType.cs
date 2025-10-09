@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.BcVersionDataWells.GetBcVersionDataWells.Enums;
+﻿namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells.Enums;
 
 /// <summary>
 /// Перечисление типов ГРП скважины.

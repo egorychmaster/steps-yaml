@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.BcVersionDataWells.GetBcVersionDataWells.Enums;
+﻿namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells.Enums;
 
 /// <summary>
 /// Наименование свойств скважин, по которым возможно производить сортировку.

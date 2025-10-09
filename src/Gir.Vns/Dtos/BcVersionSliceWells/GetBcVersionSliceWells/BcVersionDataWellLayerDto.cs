@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.BcVersionDataWells.GetBcVersionDataWells;
+﻿namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells;
 
 /// <summary>
 /// Пласт скважины данных версии БК.

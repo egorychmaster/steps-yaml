@@ -1,20 +1,10 @@
-﻿namespace Gir.Vns.Dtos.BcVersionDataWells.GetBcVersionDataWellCoordinate;
+﻿namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWellsBore;
 
 /// <summary>
-/// DTO для координат ствола скважины.
+/// Ствол скважины среза версии БК
 /// </summary>
-public class WellBoreCoordinateDto
+public class WellBoreCreateDto
 {
-    /// <summary>
-    /// ID записи.
-    /// </summary>
-    public Guid Id { get; set; }
-
-    /// <summary>
-    /// ID скважины данных версии БК.
-    /// </summary>
-    public Guid BcVersionDataWellId { get; set; }
-
     /// <summary>
     /// Номер ствола.
     /// </summary>

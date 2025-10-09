@@ -7,7 +7,7 @@ namespace Gir.Vns.Controllers;
 /// Справочник скважин.
 /// </summary>
 [ApiController]
-[Route("api/v1/vns/{processType:alpha}/{bcVersionSliceId:guid}/gir/wells/catalog")]
+[Route("api/v1/vns/gir/catalog/wells")]
 public class CatalogWellsController : ControllerBase
 {
     /// <summary>
@@ -16,8 +16,19 @@ public class CatalogWellsController : ControllerBase
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<CreateWellResultDto> CreateCluster([FromBody] CreateWellDto dto)
+    public ActionResult<CreateWellResultDto> CreateWell([FromBody] CreateWellDto dto)
     {
         return StatusCode(StatusCodes.Status201Created, new CreateWellResultDto { WellId = Guid.NewGuid() });
+    }
+
+    /// <summary>
+    /// Редактирование скважины в справочнике.
+    /// </summary>
+    [HttpPut("{Id:guid}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public ActionResult UpdateWell([FromBody] UpdateWellDto dto)
+    {
+        return NoContent();
     }
 }

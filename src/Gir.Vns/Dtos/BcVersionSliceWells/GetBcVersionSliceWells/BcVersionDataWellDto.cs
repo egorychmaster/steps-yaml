@@ -1,7 +1,7 @@
 ﻿using Gir.Vns.Dtos.Common.EconomicSummaryModule;
 using System.Text.Json.Serialization;
 
-namespace Gir.Vns.Dtos.BcVersionDataWells.GetBcVersionDataWells;
+namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells;
 
 /// <summary>
 /// Скважина данных версии БК.

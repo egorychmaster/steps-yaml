@@ -1,14 +1,9 @@
-﻿namespace Gir.Vns.Dtos.BcVersionDataWells.GetBcVersionDataWellCoordinate;
+﻿namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWellsBore;
 
 public class DataWellCoordinatesUpdateDto
 {
     /// <summary>
-    /// ID скважины данных версии БК.
-    /// </summary>
-    public Guid BcVersionDataWellId {  get; set; }
-
-    /// <summary>
-    /// 
+    /// Скважины с координатами.
     /// </summary>
     public IEnumerable<BcVersionDataWellboreUpdateDto> Bores { get; set; }
 }
