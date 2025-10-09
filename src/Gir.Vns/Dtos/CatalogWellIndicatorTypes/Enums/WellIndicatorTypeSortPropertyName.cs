@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.WellIndicatorTypes.Enums;
+﻿namespace Gir.Vns.Dtos.CatalogWellIndicatorTypes.Enums;
 
 public enum WellIndicatorTypeSortPropertyName
 {

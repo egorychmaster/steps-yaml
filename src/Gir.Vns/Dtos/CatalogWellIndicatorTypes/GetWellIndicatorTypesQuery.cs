@@ -1,8 +1,8 @@
-﻿using Gir.Vns.Dtos.WellIndicatorTypes.Enums;
+﻿using Gir.Vns.Dtos.CatalogWellIndicatorTypes.Enums;
 using Step.Lib.Common.Dtos.Filter.Sorting;
 using System.Linq.Expressions;
 
-namespace Gir.Vns.Dtos.WellIndicatorTypes;
+namespace Gir.Vns.Dtos.CatalogWellIndicatorTypes;
 
 public class GetWellIndicatorTypesQuery : BaseSortFilter<WellIndicatorTypeDto, WellIndicatorTypeSortPropertyName>
 {
@@ -11,20 +11,20 @@ public class GetWellIndicatorTypesQuery : BaseSortFilter<WellIndicatorTypeDto, W
     /// </summary>
     public Guid[]? Ids { get; init; }
 
-    /// <summary>
-    /// Номер (алиас для Number).
-    /// </summary>
-    public string? Name { get; init; }
+    ///// <summary>
+    ///// Номер (алиас для Number).
+    ///// </summary>
+    //public string? Name { get; init; }
 
-    /// <summary>
-    /// Часть номера (алиас для NumberContains).
-    /// </summary>
-    public string? NameContains { get; init; }
+    ///// <summary>
+    ///// Часть номера (алиас для NumberContains).
+    ///// </summary>
+    //public string? NameContains { get; init; }
 
-    /// <summary>
-    /// Наименования.
-    /// </summary>
-    public string[]? Names { get; init; }
+    ///// <summary>
+    ///// Наименования.
+    ///// </summary>
+    //public string[]? Names { get; init; }
 
     /// <summary>
     /// **Ключи сортировки:**

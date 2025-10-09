@@ -1,6 +1,6 @@
 ﻿using Gir.Vns.Dtos.Common;
 
-namespace Gir.Vns.Dtos.WellIndicatorTypes;
+namespace Gir.Vns.Dtos.CatalogWellIndicatorTypes;
 
 /// <summary>
 /// Одна запись справочника 'Показатели ТЕРРА'

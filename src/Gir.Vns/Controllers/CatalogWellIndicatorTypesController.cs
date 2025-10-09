@@ -1,4 +1,4 @@
-﻿using Gir.Vns.Dtos.WellIndicatorTypes;
+﻿using Gir.Vns.Dtos.CatalogWellIndicatorTypes;
 using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos;
 
@@ -8,8 +8,8 @@ namespace Gir.Vns.Controllers;
 /// Типы индикаторов скважин.
 /// </summary>
 [ApiController]
-[Route("api/v1/gir/wells/indicator-types")]
-public class WellIndicatorTypesController : ControllerBase
+[Route("api/v1/vns/gir/catalog/wells/indicator-types")]
+public class CatalogWellIndicatorTypesController : ControllerBase
 {
     /// <summary>
     /// Получение списка индикаторов скважин с фильтрацией и сортировкой.
