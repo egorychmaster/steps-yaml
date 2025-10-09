@@ -4,9 +4,9 @@ using System.Text.Json.Serialization;
 namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells;
 
 /// <summary>
-/// Скважина данных версии БК.
+/// Скважина среза версии БК.
 /// </summary>
-public class BcVersionDataWellDto
+public class BcVersionSliceWellDto
 {
     // 🎯 Свойства
     /// <summary>
@@ -28,12 +28,12 @@ public class BcVersionDataWellDto
     /// <summary>
     /// Атрибуты данной скважины.
     /// </summary>
-    public BcVersionDataWellAttributesDto? Attributes { get; set; }
+    public BcVersionSliceWellAttributesDto? Attributes { get; set; }
 
     /// <summary>
     /// Пласты данной скважины.
     /// </summary>
-    public IReadOnlyCollection<BcVersionDataWellLayerDto> Layers { get; set; } = new List<BcVersionDataWellLayerDto>();
+    public IReadOnlyCollection<BcVersionSliceWellLayerDto> Layers { get; set; } = new List<BcVersionSliceWellLayerDto>();
 
     /// <summary>
     /// Экономика данной скважины.

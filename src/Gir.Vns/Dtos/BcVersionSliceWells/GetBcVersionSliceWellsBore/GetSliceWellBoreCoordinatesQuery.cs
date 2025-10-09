@@ -1,6 +1,6 @@
 ﻿namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWellsBore;
 
-public class GetBcVersionDataWellCoordinatesQuery
+public class GetSliceWellBoreCoordinatesQuery
 {
     /// <summary>
     /// Массив ID скважин.

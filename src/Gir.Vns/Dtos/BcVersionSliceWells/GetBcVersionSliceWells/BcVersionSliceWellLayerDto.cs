@@ -1,9 +1,9 @@
 ﻿namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells;
 
 /// <summary>
-/// Пласт скважины данных версии БК.
+/// Пласт скважины среза версии БК.
 /// </summary>
-public class BcVersionDataWellLayerDto
+public class BcVersionSliceWellLayerDto
 {
     // 🎯 Свойства
     /// <summary>

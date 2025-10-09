@@ -11,9 +11,9 @@ public class WellBoreCoordinateDto
     public Guid Id { get; set; }
 
     /// <summary>
-    /// ID скважины данных версии БК.
+    /// ID скважины среза версии БК.
     /// </summary>
-    public Guid BcVersionDataWellId { get; set; }
+    public Guid BcVersionSliceWellId { get; set; }
 
     /// <summary>
     /// Номер ствола.

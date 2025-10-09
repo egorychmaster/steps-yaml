@@ -5,7 +5,7 @@ namespace Gir.Vns.Dtos.BcVersionDataClusters;
 /// <summary>
 /// Куст данных версии БК.
 /// </summary>
-public class BcVersionDataClusterDto
+public class BcVersionSliceClusterDto
 {
     /// <summary>
     /// ID.

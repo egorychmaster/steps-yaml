@@ -28,12 +28,12 @@ public class DocumentMetadataDto
     /// <summary>
     /// ID скважины в микросервисе, для которого был сохранен документ.
     /// </summary>
-    public Guid? BcVersionDataWellId { get; set; }
+    public Guid? BcVersionSliceWellId { get; set; }
 
     /// <summary>
     /// ID пласта в микросервисе, для которого был сохранен документ.
     /// </summary>
-    public Guid? BcVersionDataLayerId { get; set; }
+    public Guid? BcVersionSliceLayerId { get; set; }
 
     /// <summary>
     /// ID цикла БК в микросервисе, для которого был сохранен документ.
@@ -41,9 +41,9 @@ public class DocumentMetadataDto
     public Guid? BcCycleId { get; set; }
 
     /// <summary>
-    /// ID данных версии БК, для котого был сохранен документ.
+    /// ID среза версии БК, для котого был сохранен документ.
     /// </summary>
-    public Guid? BcVersionDataId { get; set; }
+    public Guid? BcVersionSliceId { get; set; }
 
     /// <summary>
     /// ID группы удельных показателей.

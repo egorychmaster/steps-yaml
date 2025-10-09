@@ -18,7 +18,7 @@ public class BcVersionSliceClustersController : ControllerBase
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<CollectionResult<BcVersionDataClusterDto>> GetLoadersAsync()
+    public ActionResult<CollectionResult<BcVersionSliceClusterDto>> GetLoadersAsync()
     {
         return Ok();
     }
@@ -29,7 +29,7 @@ public class BcVersionSliceClustersController : ControllerBase
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<BcVersionDataClusterDto> CreateCluster([FromBody] BcClusterCreateDto dto)
+    public ActionResult<BcVersionSliceClusterDto> CreateCluster([FromBody] BcClusterCreateDto dto)
     {
         return StatusCode(StatusCodes.Status201Created, new { Id = Guid.NewGuid() });
     }

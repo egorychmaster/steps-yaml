@@ -19,7 +19,7 @@ public class BcVersionSliceWellsController : ControllerBase
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<CollectionResult<BcVersionDataWellDto>> GetBcVersionDataWellAsync([FromQuery] GetBcVersionDataWellsQuery query)
+    public ActionResult<CollectionResult<BcVersionSliceWellDto>> GetBcVersionDataWellAsync([FromQuery] GetBcVersionSliceWellsQuery query)
     {
         return Ok();
     }
@@ -56,7 +56,7 @@ public class BcVersionSliceWellsController : ControllerBase
     [HttpGet("bore-coordinates")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<CollectionResult<WellBoreCoordinateDto>> GetBcVersionDataWellCoordinatesAsync([FromQuery] GetBcVersionDataWellCoordinatesQuery query)
+    public ActionResult<CollectionResult<WellBoreCoordinateDto>> GetBcVersionDataWellCoordinatesAsync([FromQuery] GetSliceWellBoreCoordinatesQuery query)
     {
         return Ok();
     }
@@ -69,7 +69,7 @@ public class BcVersionSliceWellsController : ControllerBase
     [HttpPut("bore-coordinates/{bcVersionSliceWellId:guid}/batch")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult UpdateWellCoordinates(Guid bcVersionSliceWellId, [FromBody] DataWellCoordinatesUpdateDto dto)
+    public ActionResult UpdateWellCoordinates(Guid bcVersionSliceWellId, [FromBody] SliceWellBoreCoordinatesUpdateDto dto)
     {
         return NoContent();
     }

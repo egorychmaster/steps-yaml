@@ -13,9 +13,9 @@ public record class CommentListDto
     public Guid Id { get; init; }
 
     /// <summary>
-    /// Идентификатор версии БК, к которой относится комментарий.
+    /// Идентификатор среза версии БК, к которой относится комментарий.
     /// </summary>
-    public Guid BcVersionId { get; init; }
+    public Guid BcVersionSliceId { get; init; }
 
     /// <summary>
     /// Идентификатор родительского комментария (если это ответ на другой комментарий).

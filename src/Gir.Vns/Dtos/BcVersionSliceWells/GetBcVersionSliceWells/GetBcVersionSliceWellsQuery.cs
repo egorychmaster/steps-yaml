@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells;
 
-public class GetBcVersionDataWellsQuery : BaseSortFilter<BcVersionDataWellDto, BcVersionDataWellSortPropertyName>
+public class GetBcVersionSliceWellsQuery : BaseSortFilter<BcVersionSliceWellDto, BcVersionSliceWellSortPropertyName>
 {
     /// <summary>
     /// Фильтр - по ID.
@@ -33,9 +33,9 @@ public class GetBcVersionDataWellsQuery : BaseSortFilter<BcVersionDataWellDto, B
     /// <summary>
     /// Поддерживаемые сортировки.
     /// </summary>
-    protected override Dictionary<BcVersionDataWellSortPropertyName, Expression<Func<BcVersionDataWellDto, object>>> SupportedSortings =>
+    protected override Dictionary<BcVersionSliceWellSortPropertyName, Expression<Func<BcVersionSliceWellDto, object>>> SupportedSortings =>
         new()
         {
-            [BcVersionDataWellSortPropertyName.DateCreated] = x => x.DateCreated,
+            [BcVersionSliceWellSortPropertyName.DateCreated] = x => x.DateCreated,
         };
 }

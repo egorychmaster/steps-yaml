@@ -21,12 +21,12 @@ public class BcVersionSliceWellCreateDto
     /// <summary>
     /// Атрибуты данной скважины.
     /// </summary>
-    public BcVersionDataWellAttributesDto? Attributes { get; set; }
+    public BcVersionSliceWellAttributesDto? Attributes { get; set; }
 
     /// <summary>
     /// Пласты данной скважины.
     /// </summary>
-    public IReadOnlyCollection<BcVersionDataWellLayerDto> Layers { get; set; } = new List<BcVersionDataWellLayerDto>();
+    public IReadOnlyCollection<BcVersionSliceWellLayerDto> Layers { get; set; } = new List<BcVersionSliceWellLayerDto>();
 
     /// <summary>
     /// Стволы скважины.

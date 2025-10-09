@@ -3,9 +3,9 @@
 namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells;
 
 /// <summary>
-/// Атрибуты скважины данных версии БК.
+/// Атрибуты скважины среза версии БК.
 /// </summary>
-public class BcVersionDataWellAttributesDto
+public class BcVersionSliceWellAttributesDto
 {
     // 🎯 Свойства
     /// <summary>

@@ -39,12 +39,12 @@ public class GetDocumentsQuery : BaseSortFilter<DocumentDto, DocumentSortPropert
     /// <summary>
     /// Фильтр по метаданным - список ID скважин в микросервисе, для которых сохраняли документы.
     /// </summary>
-    public Guid[]? BcVersionDataWellIds { get; set; }
+    public Guid[]? BcVersionSliceWellIds { get; set; }
 
     /// <summary>
     /// Фильтр по метаданным - список ID пластов в микросервисе, для которых сохраняли документы.
     /// </summary>
-    public Guid[]? BcVersionDataLayerIds { get; set; }
+    public Guid[]? BcVersionSliceLayerIds { get; set; }
 
     /// <summary>
     /// Фильтр по метаданным - список ID циклов БК в микросервисе, для которых сохраняли документы.
@@ -54,7 +54,7 @@ public class GetDocumentsQuery : BaseSortFilter<DocumentDto, DocumentSortPropert
     /// <summary>
     /// Фильтр по метаданным - список ID данных версии БК, для которых сохраняли документы.
     /// </summary>
-    public Guid[]? BcVersionDataIds { get; set; }
+    public Guid[]? BcVersionSliceIds { get; set; }
 
     /// <summary>
     /// Фильтр по метаданным - список ID группы удельных показателей.

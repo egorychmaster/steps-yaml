@@ -1,15 +1,15 @@
 ﻿namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWellsBore;
 
-public class DataWellCoordinatesUpdateDto
+public class SliceWellBoreCoordinatesUpdateDto
 {
     /// <summary>
     /// Скважины с координатами.
     /// </summary>
-    public IEnumerable<BcVersionDataWellboreUpdateDto> Bores { get; set; }
+    public IEnumerable<BcVersionSliceWellboreUpdateDto> Bores { get; set; }
 }
 
 
-public class BcVersionDataWellboreUpdateDto
+public class BcVersionSliceWellboreUpdateDto
 {
     /// <summary>
     /// ID записи.
