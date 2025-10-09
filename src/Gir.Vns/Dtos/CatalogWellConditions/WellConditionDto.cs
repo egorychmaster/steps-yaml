@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.WellConditions;
+﻿namespace Gir.Vns.Dtos.CatalogWellConditions;
 
 /// <summary>
 /// Состояние скважины.

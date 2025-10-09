@@ -1,8 +1,8 @@
-﻿using Gir.Vns.Dtos.WellConditions.Enums;
+﻿using Gir.Vns.Dtos.CatalogWellConditions.Enums;
 using Step.Lib.Common.Dtos.Filter.Sorting;
 using System.Linq.Expressions;
 
-namespace Gir.Vns.Dtos.WellConditions;
+namespace Gir.Vns.Dtos.CatalogWellConditions;
 
 public class GetWellConditionsQuery : BaseSortFilter<WellConditionDto, WellConditionSortPropertyName>
 {
@@ -11,30 +11,30 @@ public class GetWellConditionsQuery : BaseSortFilter<WellConditionDto, WellCondi
     /// </summary>
     public Guid[]? Ids { get; init; }
 
-    /// <summary>
-    /// Номер (алиас для Number).
-    /// </summary>
-    public string? Name { get; init; }
+    ///// <summary>
+    ///// Номер (алиас для Number).
+    ///// </summary>
+    //public string? Name { get; init; }
 
-    /// <summary>
-    /// Часть номера (алиас для NumberContains).
-    /// </summary>
-    public string? NameContains { get; init; }
+    ///// <summary>
+    ///// Часть номера (алиас для NumberContains).
+    ///// </summary>
+    //public string? NameContains { get; init; }
 
-    /// <summary>
-    /// Наименования.
-    /// </summary>
-    public string[]? Names { get; init; }
+    ///// <summary>
+    ///// Наименования.
+    ///// </summary>
+    //public string[]? Names { get; init; }
 
-    /// <summary>
-    /// Короткое наименование.
-    /// </summary>
-    public string? ShortName { get; init; }
+    ///// <summary>
+    ///// Короткое наименование.
+    ///// </summary>
+    //public string? ShortName { get; init; }
 
-    /// <summary>
-    /// Часть короткого наименования.
-    /// </summary>
-    public string? ShortNameContains { get; init; }
+    ///// <summary>
+    ///// Часть короткого наименования.
+    ///// </summary>
+    //public string? ShortNameContains { get; init; }
 
     /// <summary>
     /// **Ключи сортировки:**

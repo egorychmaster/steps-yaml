@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.WellConditions.Enums;
+﻿namespace Gir.Vns.Dtos.CatalogWellConditions.Enums;
 
 public enum WellConditionSortPropertyName
 {

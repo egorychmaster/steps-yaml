@@ -1,5 +1,5 @@
 ﻿using Gir.Vns.Dtos.CatalogClusters;
-using Gir.Vns.Dtos.WellConditions;
+using Gir.Vns.Dtos.CatalogWellConditions;
 using Gir.Vns.Dtos.CatalogWellPurposes;
 using Gir.Vns.Dtos.CatalogWellTypes;
 

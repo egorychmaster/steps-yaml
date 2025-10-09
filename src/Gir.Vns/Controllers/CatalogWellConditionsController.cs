@@ -1,4 +1,4 @@
-﻿using Gir.Vns.Dtos.WellConditions;
+﻿using Gir.Vns.Dtos.CatalogWellConditions;
 using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos;
 
@@ -8,8 +8,8 @@ namespace Gir.Vns.Controllers;
 /// Условия бурения скважин.
 /// </summary>
 [ApiController]
-[Route("api/v1/gir/wells/conditions")]
-public class WellConditionsController : ControllerBase
+[Route("api/v1/vns/gir/catalog/wells/conditions")]
+public class CatalogWellConditionsController : ControllerBase
 {
     /// <summary>
     /// Получение списка состояний(условий бурения) скважин с фильтрацией и сортировкой.
