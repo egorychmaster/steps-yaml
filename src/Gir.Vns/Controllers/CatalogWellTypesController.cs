@@ -8,7 +8,7 @@ namespace Gir.Vns.Controllers;
 /// Типы скважин.
 /// </summary>
 [ApiController]
-[Route("api/v1/gir/catalog/wells/types")]
+[Route("api/v1/vns/gir/catalog/wells/types")]
 public class CatalogWellTypesController : ControllerBase
 {
     /// <summary>

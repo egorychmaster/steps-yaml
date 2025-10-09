@@ -1,8 +1,8 @@
-﻿using Gir.Vns.Dtos.WellPurposes.Enums;
+﻿using Gir.Vns.Dtos.CatalogWellPurposes.Enums;
 using Step.Lib.Common.Dtos.Filter.Sorting;
 using System.Linq.Expressions;
 
-namespace Gir.Vns.Dtos.WellPurposes;
+namespace Gir.Vns.Dtos.CatalogWellPurposes;
 
 public class GetWellPurposesQuery : BaseSortFilter<WellPurposeDto, WellPurposeSortPropertyName>
 {
@@ -11,36 +11,36 @@ public class GetWellPurposesQuery : BaseSortFilter<WellPurposeDto, WellPurposeSo
     /// </summary>
     public Guid[]? Ids { get; init; }
 
-    /// <summary>
-    /// Номер (алиас для Number).
-    /// </summary>
-    public string? Name { get; init; }
+    ///// <summary>
+    ///// Номер (алиас для Number).
+    ///// </summary>
+    //public string? Name { get; init; }
 
-    /// <summary>
-    /// Часть номера (алиас для NumberContains).
-    /// </summary>
-    public string? NameContains { get; init; }
+    ///// <summary>
+    ///// Часть номера (алиас для NumberContains).
+    ///// </summary>
+    //public string? NameContains { get; init; }
 
-    /// <summary>
-    /// Наименования.
-    /// </summary>
-    public string[]? Names { get; init; }
+    ///// <summary>
+    ///// Наименования.
+    ///// </summary>
+    //public string[]? Names { get; init; }
 
-    /// <summary>
-    /// Короткое наименование.
-    /// </summary>
-    public string? ShortName { get; init; }
+    ///// <summary>
+    ///// Короткое наименование.
+    ///// </summary>
+    //public string? ShortName { get; init; }
 
-    /// <summary>
-    /// Часть короткого наименования.
-    /// </summary>
-    public string? ShortNameContains { get; init; }
+    ///// <summary>
+    ///// Часть короткого наименования.
+    ///// </summary>
+    //public string? ShortNameContains { get; init; }
 
     /// <summary>
     /// **Ключи сортировки:**
     /// - DateCreated
     /// 
-    /// **Пример использования:** `sortOptions=DateCreated`
+    /// **Пример использования:** `sortOptions=DateCreated.asc`
     /// 
     /// Сортировки: `asc` - восходящая, `desc` - нисходящая.
     /// 

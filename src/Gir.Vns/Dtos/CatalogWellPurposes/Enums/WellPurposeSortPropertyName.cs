@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.WellPurposes.Enums;
+﻿namespace Gir.Vns.Dtos.CatalogWellPurposes.Enums;
 
 public enum WellPurposeSortPropertyName
 {

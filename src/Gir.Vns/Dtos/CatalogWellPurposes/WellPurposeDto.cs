@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.WellPurposes;
+﻿namespace Gir.Vns.Dtos.CatalogWellPurposes;
 
 /// <summary>
 /// DTO (чтение записи из справочника 'Назначение скважины')

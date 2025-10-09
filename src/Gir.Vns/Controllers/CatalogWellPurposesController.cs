@@ -1,4 +1,4 @@
-﻿using Gir.Vns.Dtos.WellPurposes;
+﻿using Gir.Vns.Dtos.CatalogWellPurposes;
 using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos;
 
@@ -8,8 +8,8 @@ namespace Gir.Vns.Controllers;
 /// Назначений(целей) скважин.
 /// </summary>
 [ApiController]
-[Route("api/v1/gir/wells/purposes")]
-public class WellPurposesController : ControllerBase
+[Route("api/v1/vns/gir/catalog/wells/purposes")]
+public class CatalogWellPurposesController : ControllerBase
 {
     /// <summary>
     /// Получение списка назначений скважин с фильтрацией и сортировкой.

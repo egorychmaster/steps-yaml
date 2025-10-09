@@ -1,6 +1,6 @@
 ﻿using Gir.Vns.Dtos.CatalogClusters;
 using Gir.Vns.Dtos.WellConditions;
-using Gir.Vns.Dtos.WellPurposes;
+using Gir.Vns.Dtos.CatalogWellPurposes;
 using Gir.Vns.Dtos.CatalogWellTypes;
 
 namespace Gir.Vns.Dtos.CatalogWells;
