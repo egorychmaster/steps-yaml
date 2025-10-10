@@ -12,11 +12,7 @@ public class ProjectWell
     /// Идентификатор.
     /// </summary>
     public long? Id { get; set; }
-
-    /// <summary>
-    /// Признак удаления записи.
-    /// </summary>
-    public bool IsDeleted { get; set; }
+      
 
     ///// <summary>
     ///// Тип скважины
@@ -361,4 +357,14 @@ public class ProjectWell
     /// Дата рабочей документации.
     /// </summary>
     public DateTime? DateWorkingDocument { get; set; }
+
+    /// <summary>
+    /// Признак удаления записи.
+    /// </summary>
+    public bool IsDeleted { get; set; }
+
+    /// <summary>
+    /// Дата создания. 
+    /// </summary>
+    public DateTime DateCreated { get; set; }
 }

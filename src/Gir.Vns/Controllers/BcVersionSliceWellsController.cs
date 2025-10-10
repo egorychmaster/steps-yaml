@@ -1,5 +1,5 @@
-﻿using Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWellsBore;
-using Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells;
+﻿using Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells;
+using Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWellsBore;
 using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos;
 
