@@ -8,7 +8,7 @@ namespace Gir.Vns.Controllers;
 /// Экономические данные.
 /// </summary>
 [ApiController]
-[Route("api/v1/vns/{processType:alpha}/{bcVersionSliceId:guid}/gir/wells/economic")]
+[Route("api/v1/vns/{processType:alpha}/{bcVersionSliceId:guid}/gir/slice/economic")]
 public class BcVersionSliceEconomicController : ControllerBase
 {
     /// <summary>
