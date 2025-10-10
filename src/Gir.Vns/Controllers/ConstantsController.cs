@@ -8,7 +8,7 @@ namespace Gir.Vns.Controllers;
 /// Константы.
 /// </summary>
 [ApiController]
-[Route("api/v1/gir/constants/benefits/types/all")]
+[Route("api/v1/vns/gir/constants/benefits/types/all")]
 public class ConstantsController : ControllerBase
 {
     /// <summary>
