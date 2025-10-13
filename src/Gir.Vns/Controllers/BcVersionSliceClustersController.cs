@@ -1,6 +1,7 @@
 ﻿using Gir.Vns.Dtos.BcVersionSliceClusters;
 using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos;
+using Step.Lib.Common.Dtos.BcVersionSliceClusters;
 
 namespace Gir.Vns.Controllers;
 

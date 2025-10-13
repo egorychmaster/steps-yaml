@@ -16,4 +16,8 @@
 		<ProjectReference Include="..\Step.Lib\Step.Lib.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Dtos\BcVersionSliceClusters\" />
+	</ItemGroup>
+
 </Project>

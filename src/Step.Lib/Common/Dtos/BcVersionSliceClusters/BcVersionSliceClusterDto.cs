@@ -1,6 +1,6 @@
-﻿using Gir.Vns.Dtos.Common.EconomicSummaryModule;
+﻿using Step.Lib.Common.Dtos.EconomicSummaryModule;
 
-namespace Gir.Vns.Dtos.BcVersionSliceClusters;
+namespace Step.Lib.Common.Dtos.BcVersionSliceClusters;
 
 /// <summary>
 /// Куст данных версии БК.
@@ -20,6 +20,5 @@ public class BcVersionSliceClusterDto
     /// <summary>
     /// Экономика данного куста.
     /// </summary>
-    // TODO: сделать аналогичную обертку в entity BcVersionDataCluster.
     public EconomicSummaryGroupDto Economic { get; set; } = null!;
 }

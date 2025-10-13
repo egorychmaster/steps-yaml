@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.BcVersionSliceClusters;
+﻿namespace Step.Lib.Common.Dtos.BcVersionSliceClusters;
 
 /// <summary>
 /// Куст БК.

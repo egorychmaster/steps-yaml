@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.Common.EconomicSummaryModule;
+﻿namespace Step.Lib.Common.Dtos.EconomicSummaryModule;
 
 /// <summary>
 /// Группа экономических данных.
