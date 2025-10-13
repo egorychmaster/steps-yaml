@@ -28,6 +28,8 @@ public class BcVersionSliceClustersController : ControllerBase
     /// <summary>
     /// Получение списка координат кустов в шаге.
     /// </summary>
+    /// <param name="processType">Выбор Fbc или Uibk.</param>
+    /// <param name="bcVersionSliceId">Срез версии БК.</param>
     /// <returns></returns>
     [HttpGet("coordinates")]
     [ProducesResponseType(StatusCodes.Status200OK)]
@@ -37,5 +39,23 @@ public class BcVersionSliceClustersController : ControllerBase
         [FromQuery] GetClusterCoordinatesQuery query)
     {
         return Ok();
+    }
+
+    /// <summary>
+    /// Множественное редактирование координат кустов.
+    /// </summary>
+    /// <param name="processType">Выбор Fbc или Uibk.</param>
+    /// <param name="bcVersionSliceId">Срез версии БК.</param>
+    /// <param name="bcVersionSliceClusterId">Индентификатор куста среза версии БК.</param>
+    /// <param name="dto"></param>
+    /// <returns></returns>
+    [HttpPut("coordinates/{bcVersionSliceClusterId:guid}/batch")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public ActionResult UpdateWellCoordinates(
+        [FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId,
+        Guid bcVersionSliceClusterId, [FromBody] SliceWellBoreCoordinatesUpdateDto dto)
+    {
+        return NoContent();
     }
 }
