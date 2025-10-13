@@ -3,7 +3,7 @@ using Step.Lib.Common.Dtos;
 using Step.Lib.Common.Dtos.Loaders;
 using Step.Lib.Common.Dtos.Loaders.Geology;
 
-namespace Gir.Vns.Controllers;
+namespace Gir.Vns.Controllers.Common;
 
 /// <summary>
 /// Загрузчики.

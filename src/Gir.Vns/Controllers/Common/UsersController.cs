@@ -2,7 +2,7 @@
 using Step.Lib.Common.Dtos;
 using Step.Lib.Common.Dtos.Users;
 
-namespace Gir.Vns.Controllers;
+namespace Gir.Vns.Controllers.Common;
 
 /// <summary>
 /// Пользователи.

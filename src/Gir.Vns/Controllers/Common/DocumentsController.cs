@@ -3,7 +3,7 @@ using Step.Lib.Common.Dtos;
 using Step.Lib.Common.Dtos.Documents;
 using Step.Lib.Common.Enums;
 
-namespace Gir.Vns.Controllers;
+namespace Gir.Vns.Controllers.Common;
 
 /// <summary>
 /// Документы.
