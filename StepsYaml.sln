@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gir.Vns", "src\Gir.Vns\Gir.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Step.Lib", "src\Step.Lib\Step.Lib.csproj", "{CBDD87CC-7889-4C63-8AFF-B114711BD425}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Step02.PkpKp.Api", "src\Step02.PkpKp.Api\Step02.PkpKp.Api.csproj", "{D589BE32-90C2-40EF-A6E4-08B7896869BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CBDD87CC-7889-4C63-8AFF-B114711BD425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBDD87CC-7889-4C63-8AFF-B114711BD425}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBDD87CC-7889-4C63-8AFF-B114711BD425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D589BE32-90C2-40EF-A6E4-08B7896869BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D589BE32-90C2-40EF-A6E4-08B7896869BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D589BE32-90C2-40EF-A6E4-08B7896869BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D589BE32-90C2-40EF-A6E4-08B7896869BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

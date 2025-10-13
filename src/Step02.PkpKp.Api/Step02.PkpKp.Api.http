@@ -1,0 +1,6 @@
+@Step02.PkpKp.Api_HostAddress = http://localhost:5265
+
+GET {{Step02.PkpKp.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
