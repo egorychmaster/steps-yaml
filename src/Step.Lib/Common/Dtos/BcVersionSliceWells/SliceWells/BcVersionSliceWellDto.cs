@@ -1,7 +1,7 @@
-﻿using Gir.Vns.Dtos.Common.EconomicSummaryModule;
+﻿using Step.Lib.Common.Dtos.EconomicSummaryModule;
 using System.Text.Json.Serialization;
 
-namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells;
+namespace Step.Lib.Common.Dtos.BcVersionSliceWells.SliceWells;
 
 /// <summary>
 /// Скважина среза версии БК.

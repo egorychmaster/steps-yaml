@@ -1,4 +1,4 @@
-﻿namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells;
+﻿namespace Step.Lib.Common.Dtos.BcVersionSliceWells.SliceWells;
 
 /// <summary>
 /// Пласт скважины среза версии БК.

@@ -1,4 +1,5 @@
 ﻿using Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWellsBore;
+using Step.Lib.Common.Dtos.BcVersionSliceWells.SliceWells;
 
 namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells;
 

@@ -1,6 +1,6 @@
-﻿using Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells.Enums;
+﻿using Step.Lib.Common.Dtos.BcVersionSliceWells.SliceWells.Enums;
 
-namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWells;
+namespace Step.Lib.Common.Dtos.BcVersionSliceWells.SliceWells;
 
 /// <summary>
 /// Атрибуты скважины среза версии БК.

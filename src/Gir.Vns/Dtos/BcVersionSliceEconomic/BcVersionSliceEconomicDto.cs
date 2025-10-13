@@ -1,4 +1,4 @@
-﻿using Gir.Vns.Dtos.Common.EconomicSummaryModule;
+﻿using Step.Lib.Common.Dtos.EconomicSummaryModule;
 using Step.Lib.Shared.Domain.Constants.Enums;
 
 namespace Gir.Vns.Dtos.BcVersionSliceEconomic;

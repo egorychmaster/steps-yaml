@@ -2,6 +2,7 @@
 using Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWellsBore;
 using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos;
+using Step.Lib.Common.Dtos.BcVersionSliceWells.SliceWells;
 
 namespace Gir.Vns.Controllers;
 
