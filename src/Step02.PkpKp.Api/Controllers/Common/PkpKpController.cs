@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos.BcCycles;
 
-namespace Step02.PkpKp.Api.Controllers;
+namespace Step02.PkpKp.Api.Controllers.Common;
 
 /// <summary>
 /// Шаг(цикл) данных версии БК.

@@ -3,13 +3,13 @@ using Step.Lib.Common.Dtos;
 using Step.Lib.Common.Dtos.Documents;
 using Step.Lib.Common.Enums;
 
-namespace Gir.Vns.Controllers;
+namespace Step02.PkpKp.Api.Controllers.Common;
 
 /// <summary>
 /// Документы.
 /// </summary>
 [ApiController]
-[Route("api/v1/vns/{processType:alpha}/{bcVersionSliceId:guid}/gir/documents")]
+[Route("api/v1/vns/{processType:alpha}/{bcVersionSliceId:guid}/pkp-kp/documents")]
 public class DocumentsController : ControllerBase
 {
     /// <summary>
@@ -36,7 +36,7 @@ public class DocumentsController : ControllerBase
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<CreateDocumentResultDto> CreateDocument([FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId, 
+    public ActionResult<CreateDocumentResultDto> CreateDocument([FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId,
         [FromForm] CreateDocumentCommand dto)
     {
         return StatusCode(StatusCodes.Status201Created, new { Id = Guid.NewGuid() });
@@ -52,7 +52,7 @@ public class DocumentsController : ControllerBase
     [HttpDelete("{id:guid}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult DeleteDocument([FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId, 
+    public ActionResult DeleteDocument([FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId,
         Guid id)
     {
         return NoContent();
@@ -70,7 +70,7 @@ public class DocumentsController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<string> DownloadDocument([FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId, 
+    public ActionResult<string> DownloadDocument([FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId,
         Guid id, Guid? userId)
     {
         return Ok();

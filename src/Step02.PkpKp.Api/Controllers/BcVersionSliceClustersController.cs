@@ -16,6 +16,8 @@ public class BcVersionSliceClustersController : ControllerBase
     /// <summary>
     /// Получение списка кустов в шаге.
     /// </summary>
+    /// <param name="processType">Выбор Fbc или Uibk.</param>
+    /// <param name="bcVersionSliceId">Срез версии БК.</param>
     /// <returns></returns>
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
