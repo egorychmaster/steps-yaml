@@ -11,10 +11,10 @@ public class GetBcVersionSliceEconomicQuery : BaseSortFilter<BcVersionSliceEcono
     /// </summary>
     public Guid[]? Ids { get; init; }
 
-    ///// <summary>
-    ///// Тип льготы.
-    ///// </summary>
-    //public int? Type { get; init; }
+    /// <summary>
+    /// Идентификаторы срезов.
+    /// </summary>
+    public int[]? BcVersionSliceIds { get; init; }
 
     ///// <summary>
     ///// Номер Скважины.
