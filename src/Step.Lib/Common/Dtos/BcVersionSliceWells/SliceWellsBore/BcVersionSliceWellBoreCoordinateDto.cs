@@ -1,9 +1,9 @@
-﻿namespace Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWellsBore;
+﻿namespace Step.Lib.Common.Dtos.BcVersionSliceWells.SliceWellsBore;
 
 /// <summary>
 /// DTO для координат ствола скважины.
 /// </summary>
-public class WellBoreCoordinateDto
+public class BcVersionSliceWellBoreCoordinateDto
 {
     /// <summary>
     /// ID записи.

@@ -3,6 +3,8 @@ using Gir.Vns.Dtos.BcVersionSliceWells.GetBcVersionSliceWellsBore;
 using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos;
 using Step.Lib.Common.Dtos.BcVersionSliceWells.SliceWells;
+using Step.Lib.Common.Dtos.BcVersionSliceWells.SliceWellsBore;
+using Step.Lib.Common.Enums;
 
 namespace Gir.Vns.Controllers;
 
@@ -20,7 +22,9 @@ public class BcVersionSliceWellsController : ControllerBase
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<CollectionResult<BcVersionSliceWellDto>> GetBcVersionDataWellAsync([FromQuery] GetBcVersionSliceWellsQuery query)
+    public ActionResult<CollectionResult<BcVersionSliceWellDto>> GetBcVersionDataWellAsync(
+        [FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId, 
+        [FromQuery] GetBcVersionSliceWellsQuery query)
     {
         return Ok();
     }
@@ -31,7 +35,9 @@ public class BcVersionSliceWellsController : ControllerBase
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<BcVersionSliceWellCreateResultDto> CreateWell([FromBody] BcVersionSliceWellCreateDto dto)
+    public ActionResult<BcVersionSliceWellCreateResultDto> CreateWell(
+        [FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId, 
+        [FromBody] BcVersionSliceWellCreateDto dto)
     {
         return StatusCode(StatusCodes.Status201Created, new BcVersionSliceWellCreateResultDto { BcVersionSliceWellId = Guid.NewGuid() });
     }
@@ -44,7 +50,9 @@ public class BcVersionSliceWellsController : ControllerBase
     [HttpPut("{bcVersionSliceWellId:guid}")]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult UpdateWell(Guid bcVersionSliceWellId, [FromBody] BcVersionSliceWellUpdateDto dto)
+    public ActionResult UpdateWell(
+        [FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId, 
+        Guid bcVersionSliceWellId, [FromBody] BcVersionSliceWellUpdateDto dto)
     {
         return NoContent();
     }
@@ -57,7 +65,9 @@ public class BcVersionSliceWellsController : ControllerBase
     [HttpGet("bore-coordinates")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<CollectionResult<WellBoreCoordinateDto>> GetBcVersionDataWellCoordinatesAsync([FromQuery] GetSliceWellBoreCoordinatesQuery query)
+    public ActionResult<CollectionResult<BcVersionSliceWellBoreCoordinateDto>> GetBcVersionDataWellCoordinatesAsync(
+        [FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId, 
+        [FromQuery] GetSliceWellBoreCoordinatesQuery query)
     {
         return Ok();
     }
@@ -70,7 +80,9 @@ public class BcVersionSliceWellsController : ControllerBase
     [HttpPut("bore-coordinates/{bcVersionSliceWellId:guid}/batch")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult UpdateWellCoordinates(Guid bcVersionSliceWellId, [FromBody] SliceWellBoreCoordinatesUpdateDto dto)
+    public ActionResult UpdateWellCoordinates(
+        [FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId, 
+        Guid bcVersionSliceWellId, [FromBody] SliceWellBoreCoordinatesUpdateDto dto)
     {
         return NoContent();
     }
