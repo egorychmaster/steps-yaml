@@ -19,7 +19,7 @@ public class BcVersionSliceClustersController : ControllerBase
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<CollectionResult<BcVersionSliceClusterDto>> GetLoadersAsync()
+    public ActionResult<CollectionResult<BcVersionSliceClusterDto>> GetClustersAsync()
     {
         return Ok();
     }

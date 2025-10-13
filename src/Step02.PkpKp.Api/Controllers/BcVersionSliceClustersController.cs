@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos;
 using Step.Lib.Common.Dtos.BcVersionSliceClusters;
+using Step.Lib.Common.Dtos.BcVersionSliceClusters.Coordinates;
+using Step.Lib.Common.Enums;
 
 namespace Step02.PkpKp.Api.Controllers;
 
@@ -18,7 +20,21 @@ public class BcVersionSliceClustersController : ControllerBase
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<CollectionResult<BcVersionSliceClusterDto>> GetLoadersAsync()
+    public ActionResult<CollectionResult<BcVersionSliceClusterDto>> GetClustersAsync([FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId)
+    {
+        return Ok();
+    }
+
+    /// <summary>
+    /// Получение списка координат кустов в шаге.
+    /// </summary>
+    /// <returns></returns>
+    [HttpGet("coordinates")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public ActionResult<CollectionResult<BcVersionSliceClusterCoordinateDto>> GetClusterCoordinatesAsync(
+        [FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId,
+        [FromQuery] GetClusterCoordinatesQuery query)
     {
         return Ok();
     }
