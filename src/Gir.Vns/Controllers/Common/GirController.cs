@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Step.Lib.Common.Dtos.BcCycles;
+using Step.Lib.Common.Enums;
 
 namespace Gir.Vns.Controllers.Common;
 
@@ -13,12 +14,14 @@ public class GirController : ControllerBase
     /// <summary>
     /// Вернуть данные цикла(шага) по ID, в том числе и его статус.
     /// </summary>
+    /// <param name="processType">Выбор Fbc или Uibk.</param>
+    /// <param name="bcVersionSliceId">Срез версии БК.</param>
     /// <param name="id">Идентификатор шага.</param>
     [HttpGet("{id:guid}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult<BcCycleDto> GetBcCycleById(Guid id)
+    public ActionResult<BcCycleDto> GetBcCycleById([FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId, Guid id)
     {
         return Ok();
     }
@@ -26,11 +29,13 @@ public class GirController : ControllerBase
     /// <summary>
     /// Редактирование шага(цикла) по ID.
     /// </summary>
+    /// <param name="processType">Выбор Fbc или Uibk.</param>
+    /// <param name="bcVersionSliceId">Срез версии БК.</param>
     [HttpPut("{id:guid}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-    public ActionResult UpdateBcCycle([FromBody] IEnumerable<BcCycleUpdateCommand> dto)
+    public ActionResult UpdateBcCycle([FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId, [FromBody] IEnumerable<BcCycleUpdateCommand> dto)
     {
         return NoContent();
     }
