@@ -48,15 +48,14 @@ public class BcVersionSliceClustersController : ControllerBase
     /// </summary>
     /// <param name="processType">Выбор Fbc или Uibk.</param>
     /// <param name="bcVersionSliceId">Срез версии БК.</param>
-    /// <param name="bcVersionSliceClusterId">Индентификатор куста среза версии БК.</param>
     /// <param name="dto"></param>
     /// <returns></returns>
-    [HttpPut("coordinates/{bcVersionSliceClusterId:guid}/batch")]
+    [HttpPut("coordinates/batch")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
     public ActionResult UpdateWellCoordinates(
         [FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId,
-        Guid bcVersionSliceClusterId, [FromBody] SliceWellBoreCoordinatesUpdateDto dto)
+        [FromBody] ICollection<SliceWellBoreCoordinatesUpdateDto> dto)
     {
         return NoContent();
     }

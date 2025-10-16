@@ -4,6 +4,8 @@ namespace Step.Lib.Common.Dtos.BcVersionSliceClusters.Coordinates;
 
 public class SliceWellBoreCoordinatesUpdateDto
 {
+    public Guid Id { get; set; }
+
     /// <summary>
     /// ID системы координат (из справочника Catalog)
     /// </summary>
