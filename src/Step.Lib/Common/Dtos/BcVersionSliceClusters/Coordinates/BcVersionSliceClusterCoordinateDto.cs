@@ -3,7 +3,7 @@
 namespace Step.Lib.Common.Dtos.BcVersionSliceClusters.Coordinates;
 
 /// <summary>
-/// Координаты куста данных версии БК
+/// Координаты куста среза версии БК
 /// </summary>
 public class BcVersionSliceClusterCoordinateDto
 {
