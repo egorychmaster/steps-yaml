@@ -5,5 +5,5 @@ public class GetClusterCoordinatesQuery
     /// <summary>
     /// Массив ID кластеров.
     /// </summary>
-    public Guid[]? BcVersionSliceWellIds { get; init; }
+    public Guid[]? BcVersionSliceClusterIds { get; init; }
 }

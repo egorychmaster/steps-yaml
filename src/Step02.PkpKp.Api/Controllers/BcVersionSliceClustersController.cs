@@ -55,7 +55,7 @@ public class BcVersionSliceClustersController : ControllerBase
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
     public ActionResult UpdateWellCoordinates(
         [FromRoute] ProcessType processType, [FromRoute] Guid bcVersionSliceId,
-        [FromBody] ICollection<SliceWellBoreCoordinatesUpdateDto> dto)
+        [FromBody] ICollection<SliceClusterBoreCoordinatesUpdateDto> dto)
     {
         return NoContent();
     }

@@ -2,7 +2,7 @@
 
 namespace Step.Lib.Common.Dtos.BcVersionSliceClusters.Coordinates;
 
-public class SliceWellBoreCoordinatesUpdateDto
+public class SliceClusterBoreCoordinatesUpdateDto
 {
     public Guid Id { get; set; }
 
